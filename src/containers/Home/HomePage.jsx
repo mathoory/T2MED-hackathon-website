@@ -1,21 +1,21 @@
-import {UseMedia} from 'hooks/useMedia';
-import {useState} from 'react';
+import { UseMedia } from 'hooks/useMedia';
+import { useState } from 'react';
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
-import {Accordion} from '../../components/Accordian/index.jsx';
+import { Logo, LogoSectionAbout } from '../../components/About/index.jsx';
+import { Accordion } from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
-import {Myinfo} from '../../components/Landing/index.jsx';
-import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
+import { Myinfo } from '../../components/Landing/index.jsx';
+import { FirstPrize, PrizeHeading } from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
+import { JoinTeam, Member } from '../../components/Team';
 import {
   FOOTER,
   frequentlyAskedQuestions,
@@ -128,10 +128,10 @@ export default function HomePage() {
         </Row>
         {/* ********Prizes ending here ***** */}
 
-        <Row className="prizesection non-coding">
+        {/* <Row className="prizesection non-coding">
           <PrizeHeading type="Non-coding prizes" />
           <h2>coming soon</h2>
-        </Row>
+        </Row> */}
 
         {/* ********Sponsors here ***** */}
 
@@ -146,13 +146,13 @@ export default function HomePage() {
 
         {/* ********Team here ***** */}
         <h1 id="team">Our Team</h1>
-        {FOOTER.JOIN_TEAM.required && (
+        {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
             formLink={FOOTER.JOIN_TEAM}
             content="Interested in joining our team"
           />
-        )}
+        )} */}
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
 
@@ -162,7 +162,7 @@ export default function HomePage() {
         {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
             placeholder="Join our team"
-            formLink={TOP_SECTION.JUDGES_FORM_LINK}
+            formLink={TOP_SECTION.MENTORS_FORM_LINK}
             content="Interested in being judge"
           />
         )}

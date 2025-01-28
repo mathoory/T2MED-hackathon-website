@@ -1,13 +1,13 @@
-import {useEffect, useRef, useState} from 'react';
-import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {HashLink as Link} from 'react-router-hash-link';
+import { useEffect, useRef, useState } from 'react';
+import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
+import { HashLink as Link } from 'react-router-hash-link';
 import styled from 'styled-components';
 import HomePage from '../Home/HomePage';
 import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 
-import {MdxContent} from '../Mdx';
+import { MdxContent } from '../Mdx';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -25,7 +25,7 @@ const Wrapper = styled.div`
     transition: top 1s;
     .nav-content {
       height: 35%;
-      background-color: rgba(50, 13, 136);
+      background-color: rgba(1, 41, 67);
     }
   }
 `;
@@ -108,17 +108,17 @@ const NAVBAR = ({}) => {
               </li>
               <li>
                 <Link to={`#prizes`}>
-                  <span className="links">prizes </span>{' '}
+                  <span className="links">Prizes </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#sponsors`}>
-                  <span className="links">sponsors </span>{' '}
+                  <span className="links">Sponsors </span>{' '}
                 </Link>
               </li>
               <li>
                 <Link to={`#team`}>
-                  <span className="links">team </span>{' '}
+                  <span className="links">Team </span>{' '}
                 </Link>
               </li>
               <img

@@ -149,7 +149,7 @@ const TOP_SECTION = {
   // This image will be used for top section right side image
   IMG_SRC:boy ,
   DISCORD_LINK: "",
-  JUDGES_FORM_LINK:"",
+  MENTORS_FORM_LINK:"",
   HACKERS_REGISTRATION_FORM_LINK:""
 };
 

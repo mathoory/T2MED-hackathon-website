@@ -1,4 +1,5 @@
-import {SOCIALS, TOP_SECTION} from '../../Module/General';
+import { TOP_SECTION } from '../../Module/General';
+import Countdown from "../Countdown/Countdown";
 import MytypedComponent from '../Typed/index.js';
 import './style.css';
 
@@ -19,6 +20,7 @@ const About = () => {
     <div className="AboutMe">
       <h2>{TOP_SECTION.TITLE}</h2>
       <MytypedComponent />
+      <Countdown targetDate="2025-05-14T00:00:00" /> {/* Add Countdown */}
     </div>
   );
 };
@@ -28,7 +30,7 @@ const Myinfo = () => {
     <div className="Myinfo">
       <About />
       <p> {TOP_SECTION.SHORT_DESCRIPTION}</p>
-      <div className="join_dis">
+      {/* <div className="join_dis">
         <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
           <Btn
             ico="fab fa-2x fa-discord"
@@ -37,24 +39,25 @@ const Myinfo = () => {
             overlay="Click the link"
           />
         </a>
-      </div>
+      </div> */}
       <div className="buttom-group">
-        <a href={TOP_SECTION.JUDGES_FORM_LINK}>
+        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
           {' '}
-          <Btn class="sponsor_btn" type="Judges" overlay="Fill the form" />
+          <Btn class="sponsor_btn" type="Register" overlay="Join T2MED 2025" />
         </a>
 
-        <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
+        {/* <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
           {' '}
           <Btn
             class="register"
             type="Register "
-            overlay="Hackers registration"
+            overlay="Join T2MED 2025"
           />
-        </a>
+        </a> */}
       </div>
     </div>
   );
 };
 
-export {Btn, Myinfo};
+export { Btn, Myinfo };
+

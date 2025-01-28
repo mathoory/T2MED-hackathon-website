@@ -34,43 +34,43 @@ import Ryah from './Assets/teami/Ryah.jpg';
 import zoha from './Assets/teami/zoha.png';
 
 const TOP_SECTION = {
-  TITLE: 'Join Limbo Hacks',
-  Typed_effect: ['24 hours of creation', 'Win awesome prizes'],
+  TITLE: 'T2MED 2025',
+  Typed_effect: ['3 days of innovation', 'Solve medical challenges', 'Transform healthcare'],
   SHORT_DESCRIPTION:
-    'Join us on 20th November 2021 with over 300 students from across the nation for 24 hours of creation, innovation, & fun.',
+    'Join us on 14-16 May 2025 at the Technion Faculty of Medicine for an interdisciplinary hackathon focused on medical innovation and entrepreneurship.',
   IMG_SRC: boy,
   DISCORD_LINK: '',
-  JUDGES_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNVRQMUg4VllMRURDN1lON0haNFVCQUgySC4u',
+  MENTORS_FORM_LINK: '',
   HACKERS_REGISTRATION_FORM_LINK:
-    'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNTgyREk0VzdEMU9RVFlPMVNWVEJQUkNYMi4u'
+    'https://forms.gle/iCerARQavxdMeMkp8'
 };
 
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/limbohacks/',
-  discord: 'https://discord.com/invite/8XJSzmtWPp',
-  linkedin: 'https://www.linkedin.com/company/limbo-hacks/',
-  twitter: 'https://twitter.com/HacksLimbo',
-  devpost: 'https://limbo-hacks-12968.devpost.com/',
-  email: 'mailto:hello@limbohacks.tech',
-  mail: 'hello@limbohacks.tech'
+  instagram: 'https://www.instagram.com/t2med_?igsh=MW1kYXc3d3gxNmdhbw%3D%3D&utm_source=qr',
+  discord: '',
+  linkedin: 'https://www.linkedin.com/company/t2med/',
+  facebook: 'https://www.facebook.com/share/15SdCSEa8a/?mibextid=wwXIfr',
+  twitter: '',
+  devpost: '',
+  email: '',
+  mail: ''
 };
 
 const MIDDLE_SECTION = {
-  TITLE: 'What is Limbo hacks?',
+  TITLE: 'What is T2MED?',
   LONG_DESCRIPTION:
-    'Hack Limbo is 24 hour long running hackathon will be held on November 20th & 21th , We calls for hackers, artists, coders, designers, tech evangelists, creatives, and developers from all disciplines to take a part to win awesome prizes and collaborate with other developers . Throughout the weekend hackers at Limbo Hacks will have unique opportunities to learn from each other trying hands in new technologies We are determined to have an all-inclusive and diverse group of students attending.',
+    'T2MED is a thrilling 3-day hackathon happening on 14-16 May 2025 at the Technion Faculty of Medicine. It brings together students from all faculties to solve real-world medical challenges through workshops, hands-on mentorship, and competition. Collaborate with brilliant minds, gain insights from top-notch experts, and compete for amazing prizes!',
   LOGO: hackathonLogo
 };
 
 const FOOTER = {
   VOLUNTEERING_FORM: {
-    required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUNFBQME44TzJZWDc2UFgwTUtLN0xDQVYyUi4u'
+    required: false,
+    src: ''
   },
   JOIN_TEAM: {
     required: true,
-    src: 'https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jZdNhdUOUhEQkJSRk02OEU4SlBMTUdYOFIxOTNZSy4u'
+    src: 'https://forms.gle/iCerARQavxdMeMkp8'
   },
   Privacy_policy: {
     required: true,
@@ -90,67 +90,43 @@ const FOOTER = {
  */
 
 const calenderStartingDate = {
-  month: 12,
-  year: 2021
+  month: 5,
+  year: 2025
 };
 
 const schedule = [
   {
-    day: '8-11-2021',
+    day: '5-5-2025',
     events: [
       {
-        title: 'Intro to phycycology',
-        timings: '12 AM - 1 Pm',
+        title: 'Orientation Meeting',
+        timings: '9:00 AM - 12:00 PM',
         link: 'https://google.com'
       }
     ]
   },
   {
-    day: '5-12-2021',
+    day: '14-5-2025',
     events: [
       {
-        title: 'Intro to deep learning',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
-      },
-      {
-        title: 'Intro to deep learning',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
+        title: 'Hackathon Kickoff',
+        timings: '9:00 AM',
+        link: ''
       }
     ]
   },
   {
-    day: '3-12-2021',
+    day: '16-5-2025',
     events: [
       {
-        title: 'Intro to phycycology',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
-      }
-    ]
-  },
-  {
-    day: '1-12-2021',
-    events: [
-      {
-        title: 'Intro to deep learning',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
-      }
-    ]
-  },
-  {
-    day: '1-1-2022',
-    events: [
-      {
-        title: 'Intro to phycycology',
-        timings: '12 AM - 1 Pm',
-        link: 'https://google.com'
+        title: 'Final Presentations & Awards',
+        timings: '3:00 PM - 6:00 PM',
+        link: ''
       }
     ]
   }
 ];
+
 
 /** ICON
  *
@@ -166,56 +142,23 @@ const schedule = [
 
 const Prizeinfo = [
   [
-    //Array 1
     {
       icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'overall First',
+      type: 'First Place',
       content:
-        'First Overall prize will be given to a project that outstands all other submissions'
+        'The best project, judged by innovation, feasibility, and impact, will win the top prize.'
     },
     {
-      icon: <i className=" second fas fa-4x fa-medal"></i>,
-      type: 'overall Second',
+      icon: <i className="second fas fa-4x fa-medal"></i>,
+      type: 'Second Place',
       content:
-        'Second Overall prize will be given to the second best project of the hackathon'
+        'The second-best project will be rewarded for its exceptional contribution.'
     },
     {
-      icon: <i className=" third fas fa-4x fa-skiing-nordic"></i>,
-      type: 'Third Second',
+      icon: <i className="third fas fa-4x fa-award"></i>,
+      type: 'Third Place',
       content:
-        'Best third overall project of the hackathon will win some awesome prizes'
-    }
-  ],
-  [
-    //Array 2
-    {
-      icon: <i className="fab fourth fa-3x fa-wpbeginner"></i>,
-      type: 'Best Solo',
-      content:
-        'You project will qualify for this prize if you participate alone without a team though we encourage you to participate with a team'
-    },
-    {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: ' Best Beginner',
-      content: 'Your project will qualify for this category if atleast 50% '
-    },
-    {
-      icon: <i className=" fifth fa-3x fas fa-book-open"></i>,
-      type: 'Best UI/UX',
-      content: 'Project with most creative designs will be UI/UX track'
-    }
-  ],
-  [
-    //Array 3
-    {
-      icon: <i className="fas fa-4x sixth fa-male"></i>,
-      type: 'Best Web App with Qoom',
-      content: 'Must use qoom in your project to win this category'
-    },
-    {
-      icon: <i className="fas fa-user-friends seventh fa-3x "></i>,
-      type: 'More prizes',
-      content: 'More prizes will be revealed later'
+        'A standout project will be recognized with the third-place prize.'
     }
   ]
 ];
@@ -336,58 +279,49 @@ const frequentlyAskedQuestions = [
       {
         label: 'What is a hackathon?',
         content:
-          'A hackathon is a 24 hour event where "hackers" all over the globe will collaborate on creating a functioning software and hardware by the end of the event.'
+          'A hackathon is a collaborative event where participants solve challenges and create innovative solutions over a limited period of time.'
       },
       {
-        label: 'Who can attend?',
+        label: 'Who can participate?',
         content:
-          'Limbo Hacks is open to all undergraduate, high school students and middle school students from all schools.'
+          'Students from all faculties at the Technion, including technology, sciences, medicine, and business.'
       },
       {
-        label: 'I am a first time hacker, what should I do?',
+        label: 'Do I need a team to register?',
         content:
-          'No worries, we love to welcome first time hackers and start their hacking journey from a hackathon. We have some awesome workshops and events which will help you get started with hackathon and hacking in general.'
+          'No, you can register individually and form a team at the orientation meeting on 5 May 2025.'
       },
       {
-        label: 'How team formation works?',
+        label: 'How many people can be in a team?',
         content:
-          "You can form team with 4 members in it at maximum. If you don't have a team, there'll be plenty of opportunities for you to meet hackers and form a team!"
+          'Teams should have 4-5 members, including at least one medical student.'
       }
     ],
     [
       {
-        label: 'How to register myself in the hackathon?',
-        content:
-          'All you need is to fill our form above and join Discord, we will guide you through everything there'
+        label: 'What if I don’t have a project idea?',
+        content: 'No worries! You can join a team and brainstorm ideas together during the hackathon.'
       },
       {
         label: 'I have more questions?',
         content:
-          'Reach us directly at (rehan@limbohacks.tech or hello@limbohacks.tech) we would happy to help you.'
+          'Reach us directly, we would be happy to help you.'
       },
       {
-        label: 'Can i volunteer?',
+        label: 'Are there prizes?',
         content:
-          'Yes we are actively looking for volunteers, fill the form (in footer section) we will be glad to have you.'
+          'Yes! Winning teams will receive amazing prizes, and participants have the opportunity to pitch their ideas to experts.'
       },
       {
         label: 'Will there be swag?',
-        content: 'Yes! Participants will recieveing Limbo Hacks swag!.'
+        content: 'Yes! All participants will receive exclusive T2MED swag.'
       }
     ]
   ]
 ];
 
 export {
-  TOP_SECTION,
-  MIDDLE_SECTION,
-  SOCIALS,
-  FOOTER,
-  Prizeinfo,
-  sponsorLogos,
-  TeamInfo,
-  JudgesInfo,
-  frequentlyAskedQuestions,
-  schedule,
-  calenderStartingDate
+  calenderStartingDate, FOOTER, frequentlyAskedQuestions, JudgesInfo, MIDDLE_SECTION, Prizeinfo, schedule, SOCIALS, sponsorLogos,
+  TeamInfo, TOP_SECTION
 };
+
