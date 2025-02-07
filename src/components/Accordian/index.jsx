@@ -22,7 +22,7 @@ class Panel extends React.Component {
   }
 
   render() {
-    const {label, content, activeTab, index, activateTab} = this.props;
+    const {label, content, link, activeTab, index, activateTab} = this.props;
     const {height} = this.state;
     const isActive = activeTab === index;
     const innerStyle = {
@@ -39,7 +39,15 @@ class Panel extends React.Component {
           style={innerStyle}
           aria-hidden={!isActive}
         >
-          <p className="panel__content">{content}</p>
+          <p className="panel__content">
+            {content}
+            {link && (
+              <>
+                {' '}
+                <a href={link.url}>{link.text}</a>
+              </>
+            )}
+          </p>
         </div>
       </div>
     );

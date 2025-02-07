@@ -1,15 +1,11 @@
-import { useEffect, useState } from 'react';
-import { FOOTER, SOCIALS, TOP_SECTION } from '../../Module/General';
-import { Btn } from '../Landing/index.jsx';
+import {useEffect, useState} from 'react';
+import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
+import {Btn} from '../Landing/index.jsx';
 import cross from './assets/cross.svg';
-import DevPost from './assets/icons8-dev-post.svg';
-import Dis from './assets/icons8-discord.svg';
 import Insta from './assets/icons8-instagram.svg';
 import Linked from './assets/icons8-linkedin-2.svg';
 import Mail from './assets/icons8-mail.svg';
 import Twitter from './assets/icons8-twitter.svg';
-import PrivacyPolicy from './assets/Privacy policy.pdf';
-import TermsOfUse from './assets/Terms of use.pdf';
 //------------------------------------------------------------------
 import './style.scss';
 
@@ -56,11 +52,6 @@ const Footer = () => {
             </a>
           </div>
           <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.discord}>
-              <img src={Dis} alt="" />
-            </a>
-          </div>
-          <div className="social-icon">
             <a rel="noreferrer" target="_blank" href={SOCIALS.linkedin}>
               <img src={Linked} alt="" />
             </a>
@@ -75,19 +66,14 @@ const Footer = () => {
               <img src={Twitter} alt="" />
             </a>
           </div>
-          <div className="social-icon">
-            <a rel="noreferrer" target="_blank" href={SOCIALS.devpost}>
-              <img src={DevPost} alt="" />
-            </a>
-          </div>
         </div>
         <div className="Register_a">
           <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
             <Btn type="Register" overlay="Fill the form" />
           </a>
           {FOOTER.VOLUNTEERING_FORM.required && (
-            <a href={FOOTER.VOLUNTEERING_FORM.src}>
-              <Btn type="Volunteer" class="Volunteer" overlay="Fill the form" />
+            <a href={SOCIALS.email}>
+              <Btn type="sponsor_btn" class="Volunteer" overlay="Send a mail" />
             </a>
           )}
         </div>
@@ -101,7 +87,7 @@ const Footer = () => {
 
           {FOOTER.Privacy_policy.required && (
             <a
-              href={PrivacyPolicy}
+              href={'https://md.technion.ac.il/t2med/'}
               download
               target="blank"
               className="privacy-policy"
@@ -111,7 +97,7 @@ const Footer = () => {
           )}
           {FOOTER.Terms_of_use.required && (
             <a
-              href={TermsOfUse}
+              href={'https://md.technion.ac.il/t2med/'}
               download
               target="blank"
               className="privacy-policy"

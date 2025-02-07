@@ -13,7 +13,7 @@ const JoinTeam: React.FC<IJoinTeam> = ({placeholder, formLink, content}) => {
     <div className="joinT">
       <h3>{content} </h3>
       <a href={formLink}>
-        <Btn type={placeholder} overlay="Fill the form" link={formLink} />
+        <Btn type={placeholder} overlay="Send a mail" link={formLink} />
       </a>
     </div>
   );
@@ -27,9 +27,6 @@ const Member = ({info}: {info: any}) => {
       <div className="members-link">
         <h3>{name}</h3>
         <p>{role}</p>
-        <a href={github}>
-          <i className="fab fa-2x fa-github"></i>
-        </a>
         <a href={linkedin}>
           <i className="fab fa-2x fa-linkedin"></i>
         </a>
@@ -38,4 +35,4 @@ const Member = ({info}: {info: any}) => {
   );
 };
 
-export {Member, JoinTeam};
+export {JoinTeam, Member};

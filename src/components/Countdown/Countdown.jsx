@@ -1,7 +1,7 @@
-import { useEffect, useState } from "react";
-import "./Countdown.css"; // Add optional styling here
+import {useEffect, useState} from 'react';
+import './Countdown.css'; // Add optional styling here
 
-const Countdown = ({ targetDate }) => {
+const Countdown = ({targetDate}) => {
   const [timeLeft, setTimeLeft] = useState(getTimeRemaining(targetDate));
 
   // Helper function to calculate the remaining time
@@ -11,7 +11,7 @@ const Countdown = ({ targetDate }) => {
     const minutes = Math.floor((total / 1000 / 60) % 60);
     const hours = Math.floor((total / (1000 * 60 * 60)) % 24);
     const days = Math.floor(total / (1000 * 60 * 60 * 24));
-    return { total, days, hours, minutes, seconds };
+    return {total, days, hours, minutes, seconds};
   }
 
   // Update the timer every second

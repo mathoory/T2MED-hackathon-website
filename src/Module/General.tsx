@@ -7,19 +7,13 @@ import hackathonLogo from './Assets/hackathonLogo.png';
  */
 
 import boy from './Assets/boy.png';
-import pass from './Assets/sponsorsLogos/1pass.png';
-import ACF from './Assets/sponsorsLogos/ACF.png';
-import cfc from './Assets/sponsorsLogos/cfc.png';
-import echoAR from './Assets/sponsorsLogos/echoAR.png';
-import egg from './Assets/sponsorsLogos/egg.png';
-import glimpse from './Assets/sponsorsLogos/glimpse.png';
-import interviewC from './Assets/sponsorsLogos/interview-cake.jpg';
-import ll from './Assets/sponsorsLogos/ll.png';
-import qoom from './Assets/sponsorsLogos/qoom.svg';
-import Replit from './Assets/sponsorsLogos/replit.png';
-import sublime from './Assets/sponsorsLogos/sublime.png';
-import taskade from './Assets/sponsorsLogos/taskade.png';
-import lyin from './Assets/teami/lyin.jpg';
+
+import bnaizion from './Assets/sponsorsLogos/bnai_zion-modified.png';
+import carmel from './Assets/sponsorsLogos/carmel-modified.png';
+import haemek from './Assets/sponsorsLogos/haemek-modified.png';
+import hililyafe from './Assets/sponsorsLogos/hilel_yafe-modified.png';
+import medicine from './Assets/sponsorsLogos/medicine-modified.png';
+import rambam from './Assets/sponsorsLogos/Rambam-modified.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -28,38 +22,43 @@ import lyin from './Assets/teami/lyin.jpg';
 
 // Importing all Team members images  from Assets
 
-import me from './Assets/teami/me.png';
-import moon from './Assets/teami/moon.png';
-import Ryah from './Assets/teami/Ryah.jpg';
-import zoha from './Assets/teami/zoha.png';
+import gili from './Assets/teami/Gili Gipsz.jpg';
+import irina from './Assets/teami/irina.jpeg';
+import mattan from './Assets/teami/Mattan Hoory.jpeg';
+import or from './Assets/teami/Or.jpeg';
+import yoel from './Assets/teami/Yoel_levy.jpg';
 
 const TOP_SECTION = {
   TITLE: 'T2MED 2025',
-  Typed_effect: ['3 days of innovation', 'Solve medical challenges', 'Transform healthcare'],
+  Typed_effect: [
+    '3 days of innovation',
+    'Solve medical challenges',
+    'Transform healthcare'
+  ],
   SHORT_DESCRIPTION:
     'Join us on 14-16 May 2025 at the Technion Faculty of Medicine for an interdisciplinary hackathon focused on medical innovation and entrepreneurship.',
   IMG_SRC: boy,
   DISCORD_LINK: '',
   MENTORS_FORM_LINK: '',
-  HACKERS_REGISTRATION_FORM_LINK:
-    'https://forms.gle/iCerARQavxdMeMkp8'
+  HACKERS_REGISTRATION_FORM_LINK: 'https://forms.gle/iCerARQavxdMeMkp8'
 };
 
 const SOCIALS = {
-  instagram: 'https://www.instagram.com/t2med_?igsh=MW1kYXc3d3gxNmdhbw%3D%3D&utm_source=qr',
+  instagram:
+    'https://www.instagram.com/t2med_?igsh=MW1kYXc3d3gxNmdhbw%3D%3D&utm_source=qr',
   discord: '',
   linkedin: 'https://www.linkedin.com/company/t2med/',
   facebook: 'https://www.facebook.com/share/15SdCSEa8a/?mibextid=wwXIfr',
-  twitter: '',
+  twitter: 'https://x.com/t2med3ds',
   devpost: '',
-  email: '',
-  mail: ''
+  email: 'mailto:t2medtechnion@gmail.com',
+  mail: 't2medtechnion@gmail.com'
 };
 
 const MIDDLE_SECTION = {
   TITLE: 'What is T2MED?',
   LONG_DESCRIPTION:
-    'T2MED is a thrilling 3-day hackathon happening on 14-16 May 2025 at the Technion Faculty of Medicine. It brings together students from all faculties to solve real-world medical challenges through workshops, hands-on mentorship, and competition. Collaborate with brilliant minds, gain insights from top-notch experts, and compete for amazing prizes!',
+    'T2MED is a unique 3-day hackathon happening on 14-16 May 2025 at the Technion Faculty of Medicine. Unlike other hackathons, T2MED is deeply rooted in clinical challenges, bringing together students from all faculties to collaborate with doctors, medical researchers, and healthcare professionals from top hospitals and clinics. Work alongside real clinicians, tackle pressing medical problems, and develop innovative solutions with direct guidance from experts. Gain hands-on experience, expand your network in both medicine and technology, and compete for incredible prizes!',
   LOGO: hackathonLogo
 };
 
@@ -116,6 +115,16 @@ const schedule = [
     ]
   },
   {
+    day: '15-5-2025',
+    events: [
+      {
+        title: 'Hackathon Continues',
+        timings: '9:00 AM',
+        link: ''
+      }
+    ]
+  },
+  {
     day: '16-5-2025',
     events: [
       {
@@ -126,7 +135,6 @@ const schedule = [
     ]
   }
 ];
-
 
 /** ICON
  *
@@ -146,19 +154,19 @@ const Prizeinfo = [
       icon: <i className="first fas fa-4x fa-trophy"></i>,
       type: 'First Place',
       content:
-        'The best project, judged by innovation, feasibility, and impact, will win the top prize.'
+        'The best project, judged by innovation, feasibility, and impact, will win the prizes worth ten thousand shekels, more prizes to be announced soon!'
     },
     {
       icon: <i className="second fas fa-4x fa-medal"></i>,
       type: 'Second Place',
       content:
-        'The second-best project will be rewarded for its exceptional contribution.'
+        'The runner-up will receive an exciting prize package worth thousands of shekels, recognizing their outstanding creativity and execution. Additional surprises await!'
     },
     {
       icon: <i className="third fas fa-4x fa-award"></i>,
       type: 'Third Place',
       content:
-        'A standout project will be recognized with the third-place prize.'
+        'A standout project will be recognized with the third-place prize worth hundereds of shekels.'
     }
   ]
 ];
@@ -173,87 +181,82 @@ const TeamInfo = [
   [
     //Array 1
     {
-      Name: 'Rehan',
-      role: 'Organizer',
-      github: 'https://github.com/Limbo-Hacks/Hackathon-website-template',
-      linkedin: '',
-      img: me
+      name: 'Irina Shkalikov',
+      role: 'Medicine and Biomedical Engineering',
+      linkedin: 'https://www.linkedin.com/in/irina-shkalikov/',
+      img: irina
     },
     {
-      Name: 'Moon',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: moon
+      name: 'Gili Gipsz',
+      role: 'Medicine and Biomedical Engineering | Co-founder & CTO at Speculate Gynecology',
+      linkedin: 'https://www.linkedin.com/in/gili-gipsz/',
+      img: gili
     },
     {
-      Name: 'Erika',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: Ryah
+      name: 'Or Ginsburg',
+      role: 'Medicine | Co-founder & CEO at Speculate Gynecology',
+      linkedin: 'https://www.linkedin.com/in/or-ginsburg/',
+      img: or
     }
   ],
   [
     //Array 2
     {
-      Name: 'Lyanola',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: lyin
+      name: 'Yoel Levy',
+      role: 'Medicine and Biomedical Engineering',
+      linkedin: 'https://www.linkedin.com/in/yoelevy/',
+      img: yoel
     },
     {
-      Name: 'Zoheb',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: zoha
+      name: 'Mattan Hoory',
+      role: 'Data Science and Biotechnology',
+      linkedin: 'https://www.linkedin.com/in/mattan-hoory-2224b3239/',
+      img: mattan
     }
   ]
 ];
 
 const JudgesInfo = [
   [
-    //Array 1
-    {
-      Name: 'Rehan',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: me
-    },
-    {
-      Name: 'Moon',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: moon
-    },
-    {
-      Name: 'Ryah Garcia',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: Ryah
-    }
-  ],
-  [
-    //Array 2
-    {
-      Name: 'Lyanola',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: lyin
-    },
-    {
-      Name: 'Zoheb',
-      role: 'Organizer',
-      github: '',
-      linkedin: '',
-      img: zoha
-    }
+    //   //Array 1
+    //   {
+    //     name: 'Rehan',
+    //     role: 'Organizer',
+    //     github: '',
+    //     linkedin: '',
+    //     img: irina
+    //   },
+    //   {
+    //     name: 'Moon',
+    //     role: 'Organizer',
+    //     github: '',
+    //     linkedin: '',
+    //     img: moon
+    //   },
+    //   {
+    //     name: 'Ryah Garcia',
+    //     role: 'Organizer',
+    //     github: '',
+    //     linkedin: '',
+    //     img: Ryah
+    //   }
+    // ],
+    // [
+    //   //Array 2
+    //   {
+    //     name: 'Lyanola',
+    //     role: 'Organizer',
+    //     github: '',
+    //     linkedin: '',
+    //     img: lyin
+    //   },
+    //   {
+    //     name: 'Zoheb',
+    //     role: 'Organizer',
+    //     github: '',
+    //     linkedin: '',
+    //     img: zoha
+    //   }
   ]
 ];
 
@@ -264,10 +267,8 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src: cfc}, {src: sublime}, {src: echoAR}], //Array 1
-  [{src: taskade}, {src: Replit}, {src: qoom}], //Array 2
-  [{src: interviewC}, {src: pass}, {src: glimpse}], //Array 3
-  [{src: egg}, {src: ll}, {src: ACF}] //Array 4
+  [{src: medicine}, {src: carmel}, {src: rambam}], //Array 1
+  [{src: hililyafe}, {src: haemek}, {src: bnaizion}] //Array 2
 ];
 
 /** Instructions
@@ -300,17 +301,21 @@ const frequentlyAskedQuestions = [
     [
       {
         label: 'What if I don’t have a project idea?',
-        content: 'No worries! You can join a team and brainstorm ideas together during the hackathon.'
+        content:
+          'No worries! You can join a team and brainstorm ideas together during the hackathon.'
       },
       {
         label: 'I have more questions?',
-        content:
-          'Reach us directly, we would be happy to help you.'
+        content: 'Reach us directly, we would be happy to help you.',
+        link: {
+          text: 'Send us an email',
+          url: 'mailto:t2medtechnion@gmail.com'
+        }
       },
       {
         label: 'Are there prizes?',
         content:
-          'Yes! Winning teams will receive amazing prizes, and participants have the opportunity to pitch their ideas to experts.'
+          'Yes! Winning teams will receive amazing prizes worth thousand of shekels, and participants have the opportunity to pitch their ideas to experts.'
       },
       {
         label: 'Will there be swag?',
@@ -321,7 +326,15 @@ const frequentlyAskedQuestions = [
 ];
 
 export {
-  calenderStartingDate, FOOTER, frequentlyAskedQuestions, JudgesInfo, MIDDLE_SECTION, Prizeinfo, schedule, SOCIALS, sponsorLogos,
-  TeamInfo, TOP_SECTION
+  calenderStartingDate,
+  FOOTER,
+  frequentlyAskedQuestions,
+  JudgesInfo,
+  MIDDLE_SECTION,
+  Prizeinfo,
+  schedule,
+  SOCIALS,
+  sponsorLogos,
+  TeamInfo,
+  TOP_SECTION
 };
-

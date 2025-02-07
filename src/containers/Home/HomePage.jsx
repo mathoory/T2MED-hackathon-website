@@ -1,29 +1,29 @@
-import { UseMedia } from 'hooks/useMedia';
-import { useState } from 'react';
+import {UseMedia} from 'hooks/useMedia';
+import {useState} from 'react';
+import {SOCIALS} from '../../Module/General';
+
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
-import { Logo, LogoSectionAbout } from '../../components/About/index.jsx';
-import { Accordion } from '../../components/Accordian/index.jsx';
+import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
+import {Accordion} from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
 import Footer from '../../components/Footer/index.jsx';
-import { Myinfo } from '../../components/Landing/index.jsx';
-import { FirstPrize, PrizeHeading } from '../../components/Prizes/index.jsx';
+import {Myinfo} from '../../components/Landing/index.jsx';
+import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
 import Media from '../../components/Socials/index.jsx';
 import {
   Sponsor,
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import { JoinTeam, Member } from '../../components/Team';
+import {JoinTeam, Member} from '../../components/Team';
 import {
   FOOTER,
   frequentlyAskedQuestions,
-  JudgesInfo,
   Prizeinfo,
   sponsorLogos,
-  TeamInfo,
-  TOP_SECTION
+  TeamInfo
 } from '../../Module/General';
 import MyCalender from '../calender';
 import './about.css';
@@ -161,12 +161,12 @@ export default function HomePage() {
         <h1 id="team">Judges</h1>
         {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
-            placeholder="Join our team"
-            formLink={TOP_SECTION.MENTORS_FORM_LINK}
+            placeholder="Contact Us"
+            formLink={SOCIALS.email}
             content="Interested in being judge"
           />
         )}
-        {JudgesInfo.map(TeamMembers)}
+        {/* {JudgesInfo.map(TeamMembers)} */}
         {/* ********Team ending here ***** */}
       </Container>
       <Footer />

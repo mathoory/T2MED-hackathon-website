@@ -1,5 +1,5 @@
-import { TOP_SECTION } from '../../Module/General';
-import Countdown from "../Countdown/Countdown";
+import {TOP_SECTION} from '../../Module/General';
+import Countdown from '../Countdown/Countdown';
 import MytypedComponent from '../Typed/index.js';
 import './style.css';
 
@@ -59,5 +59,4 @@ const Myinfo = () => {
   );
 };
 
-export { Btn, Myinfo };
-
+export {Btn, Myinfo};

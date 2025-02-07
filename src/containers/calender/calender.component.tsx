@@ -67,7 +67,9 @@ const EventsView = () => {
             <h3>{event.title}</h3>
             <p>{event.timings}</p>
           </div>
-          <button>Add to calender</button>
+          <button>
+            <b>Add To Calendar</b>
+          </button>
         </H.Event>
       ))}
     </H.EventContainer>

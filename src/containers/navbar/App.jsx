@@ -1,13 +1,14 @@
-import { useEffect, useRef, useState } from 'react';
-import { Route, BrowserRouter as Router, Switch } from 'react-router-dom';
-import { HashLink as Link } from 'react-router-hash-link';
+import {useEffect, useRef, useState} from 'react';
+import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
+import {HashLink as Link} from 'react-router-hash-link';
 import styled from 'styled-components';
+import technion100 from '../../Module/Assets/sponsorsLogos/technion100-modified.png';
 import HomePage from '../Home/HomePage';
 import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
 import './styles.scss';
 
-import { MdxContent } from '../Mdx';
+import {MdxContent} from '../Mdx';
 
 const NAVIGATION_OFFSET = 66;
 
@@ -127,6 +128,11 @@ const NAVBAR = ({}) => {
                 src={logoClose}
               />
             </ul>
+            <img
+              className="company-logo"
+              src={technion100}
+              alt="Company Logo"
+            />
           </div>
           <div className="ease" />
         </Wrapper>
