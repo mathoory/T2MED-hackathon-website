@@ -19,7 +19,11 @@ function SponsorUS() {
     <div className="joinT sponsorUS">
       <h3>Interested in Sponsoring </h3>
       <a href={SOCIALS.email}>
-        <Btn className="sponsor_btn" type="Sponsor us" overlay="Send a mail" />
+        <Btn
+          className="sponsor_btn"
+          type="Sponsor us"
+          overlay="Send an email"
+        />
       </a>{' '}
     </div>
   );

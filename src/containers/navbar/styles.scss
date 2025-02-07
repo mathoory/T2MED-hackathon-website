@@ -20,6 +20,9 @@
       height: 72px;
       box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
     }
+    .nav_bar-offset-crossed .links {
+      color: #012A43; /* Blue color after scrolling */
+    }
   }
 
   .s-open,
@@ -42,23 +45,31 @@
     display: inline-block;
   }
   .links {
-    color: #012A43;
+    color: #fff; /* Default white color before scroll */
     transition: 0.5s;
     font-weight: 300;
     letter-spacing: 1.3px;
-
+  
     &:hover {
       opacity: 0.8;
     }
   }
 
 .company-logo {
-    position: absolute;
-    top: 10px; /* Adjust based on your navbar height */
-    right: 20px; /* Align to the right */
-    height: 50px; /* Adjust size as needed */
-    width: auto;
+  position: absolute;
+  top: 10px; /* Adjust based on your navbar height */
+  right: 20px; /* Align to the right */
+  height: 50px; /* Default size for larger screens */
+  width: auto;
+}
+
+@media (max-width: 768px) { /* Adjust breakpoint as needed */
+  .company-logo {
+    height: 30px; /* Smaller size for mobile */
+    top: 5px; /* Adjust top position for better alignment */
+    right: 10px; /* Adjust right position for mobile */
   }
+}
 
   @media (max-width: 1000px) {
     .ease {

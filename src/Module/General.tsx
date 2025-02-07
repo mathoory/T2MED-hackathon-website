@@ -32,7 +32,7 @@ const TOP_SECTION = {
   TITLE: 'T2MED 2025',
   Typed_effect: [
     '3 days of innovation',
-    'Solve medical challenges',
+    'Medical challenges',
     'Transform healthcare'
   ],
   SHORT_DESCRIPTION:
@@ -44,13 +44,9 @@ const TOP_SECTION = {
 };
 
 const SOCIALS = {
-  instagram:
-    'https://www.instagram.com/t2med_?igsh=MW1kYXc3d3gxNmdhbw%3D%3D&utm_source=qr',
-  discord: '',
+  instagram: 'https://www.instagram.com/t2med_',
   linkedin: 'https://www.linkedin.com/company/t2med/',
-  facebook: 'https://www.facebook.com/share/15SdCSEa8a/?mibextid=wwXIfr',
-  twitter: 'https://x.com/t2med3ds',
-  devpost: '',
+  facebook: 'https://www.facebook.com/t2med3ds/',
   email: 'mailto:t2medtechnion@gmail.com',
   mail: 't2medtechnion@gmail.com'
 };
@@ -108,8 +104,23 @@ const schedule = [
     day: '14-5-2025',
     events: [
       {
-        title: 'Hackathon Kickoff',
-        timings: '9:00 AM',
+        title: 'Gathering Kick Off',
+        timings: '16:30 - 17:30',
+        link: ''
+      },
+      {
+        title: 'Opening Ceremony',
+        timings: '17:30 - 18:30',
+        link: ''
+      },
+      {
+        title: 'Begin Working!',
+        timings: '18:30 - 22:00',
+        link: ''
+      },
+      {
+        title: 'Happy Hour',
+        timings: '22:00 - 00:00',
         link: ''
       }
     ]
@@ -118,8 +129,43 @@ const schedule = [
     day: '15-5-2025',
     events: [
       {
-        title: 'Hackathon Continues',
-        timings: '9:00 AM',
+        title: 'Working in Groups & Consulting with Mentors',
+        timings: '8:00 - 9:30',
+        link: ''
+      },
+      {
+        title: 'Lecture 1 <TBD>',
+        timings: '9:30 - 10:30',
+        link: ''
+      },
+      {
+        title: 'Working in Groups & Consulting with Mentors',
+        timings: '10:00 - 15:30',
+        link: ''
+      },
+      {
+        title: 'Activity <TBD>',
+        timings: '15:30 - 17:00',
+        link: ''
+      },
+      {
+        title: 'Working in Groups & Consulting with Mentors',
+        timings: '17:00 - 18:00',
+        link: ''
+      },
+      {
+        title: 'Happy Hour + Dinner',
+        timings: '18:00 - 19:00',
+        link: ''
+      },
+      {
+        title: 'Lecture 2 <TBD>',
+        timings: '19:00 - 20:30',
+        link: ''
+      },
+      {
+        title: 'Pitch Practice',
+        timings: '20:30 - 22:00',
         link: ''
       }
     ]
@@ -128,8 +174,33 @@ const schedule = [
     day: '16-5-2025',
     events: [
       {
-        title: 'Final Presentations & Awards',
-        timings: '3:00 PM - 6:00 PM',
+        title: 'Final Work',
+        timings: '8:00 - 10:30',
+        link: ''
+      },
+      {
+        title: 'Pitches',
+        timings: '10:30 - 11:30',
+        link: ''
+      },
+      {
+        title: 'Semi-finals',
+        timings: '11:30 - 12:30',
+        link: ''
+      },
+      {
+        title: 'Finals',
+        timings: '12:30 - 13:30',
+        link: ''
+      },
+      {
+        title: 'Judges’ Decisions',
+        timings: '13:30 - 14:00',
+        link: ''
+      },
+      {
+        title: 'Announcing the Winners & Final Ceremony',
+        timings: '13:30 - 14:00',
         link: ''
       }
     ]
@@ -188,13 +259,13 @@ const TeamInfo = [
     },
     {
       name: 'Gili Gipsz',
-      role: 'Medicine and Biomedical Engineering | Co-founder & CTO at Speculate Gynecology',
+      role: 'Biomedical and electrical engineering | Co-founder & CTO at Speculate Gynecology',
       linkedin: 'https://www.linkedin.com/in/gili-gipsz/',
       img: gili
     },
     {
       name: 'Or Ginsburg',
-      role: 'Medicine | Co-founder & CEO at Speculate Gynecology',
+      role: 'Medicine and Biomedical Engineering | Co-founder & CEO at Speculate Gynecology',
       linkedin: 'https://www.linkedin.com/in/or-ginsburg/',
       img: or
     }
@@ -203,7 +274,7 @@ const TeamInfo = [
     //Array 2
     {
       name: 'Yoel Levy',
-      role: 'Medicine and Biomedical Engineering',
+      role: 'Medicine',
       linkedin: 'https://www.linkedin.com/in/yoelevy/',
       img: yoel
     },
@@ -315,7 +386,7 @@ const frequentlyAskedQuestions = [
       {
         label: 'Are there prizes?',
         content:
-          'Yes! Winning teams will receive amazing prizes worth thousand of shekels, and participants have the opportunity to pitch their ideas to experts.'
+          'Yes! Winning teams will receive amazing prizes worth thousands of shekels, and participants have the opportunity to pitch their ideas to experts.'
       },
       {
         label: 'Will there be swag?',
