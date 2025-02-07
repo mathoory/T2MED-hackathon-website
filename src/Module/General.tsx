@@ -338,8 +338,8 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src: medicine}, {src: carmel}, {src: rambam}], //Array 1
-  [{src: hililyafe}, {src: haemek}, {src: bnaizion}] //Array 2
+  [{src: medicine}, {src: carmel}, {src: haemek}], //Array 1
+  [{src: hililyafe}, {src: rambam}, {src: bnaizion}] //Array 2
 ];
 
 /** Instructions

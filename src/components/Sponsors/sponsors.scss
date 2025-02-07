@@ -1,46 +1,61 @@
-.Sponsor{
-  margin-bottom: 5rem;
-  transition: 0.3s;
-}
-.Sponsor:hover{
+
+.Sponsor:hover {
   transform: scale(1.1);
 }
-.Sponsor img{
-    width: 25rem;
-    display: inline-block;
-    margin: 0;
-}
 
-.shead{
-    font-size: 6rem;
-    margin-bottom: 6rem;
-   margin-top: -3rem;
+
+.shead {
+  font-size: 6rem;
+  margin-bottom: 6rem;
+  margin-top: -3rem;
 }
 
 .sponsorUS {
   margin-bottom: 7rem;
 }
 
-/* more smaller */
-@media  (max-width: 570px){
-  .shead{
-    margin-top:0;
-  }
-  .Sponsor img{
+.Sponsor {
+  margin-bottom: 5rem;
+  transition: 0.3s;
+  display: flex;
+  justify-content: center; /* Center the logos horizontally */
+  align-items: center; /* Center the logos vertically */
+}
 
-  margin-bottom: 3rem;
+.Sponsor img {
+  display: block;
+  margin: 0;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  object-fit: contain;
 }
+
+/* For square-like images (near 1:1 aspect ratio) */
+.Sponsor img.square {
+  height: 25rem; /* Maintain the square aspect ratio */
 }
-  .Sponsor img{
- 
-   -webkit-animation: mover 1s infinite  alternate;
-   animation: mover 1s infinite  alternate;
+
+/* For rectangular logos (wide width, narrow height) */
+.Sponsor img.rectangular {
+  height: 10rem; /* Fixed height for rectangular logos */
+}
+
+/* Hover effect for rectangular logos */
+.Sponsor img.rectangular:hover {
+  transform: scale(1.1); /* Enlarge rectangular logos on hover */
+}
+
+/* More responsive for smaller screens */
+@media (max-width: 570px) {
+  .shead {
+    margin-top: 0;
   }
-  @-webkit-keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+  .Sponsor img.square {
+    height: 21rem;
   }
-  @keyframes mover {
-    0% { transform: translateY(0); }
-    100% { transform: translateY(-20px); }
+  .Sponsor img.rectangular {
+    width: auto; /* Keep aspect ratio for rectangular logos */
+    height: 8rem; /* Adjust for smaller screens */
   }
+}

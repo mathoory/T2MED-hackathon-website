@@ -34,8 +34,7 @@ const SponsorGroup = (props, index) => {
     <Row key={index}>
       {props.map((s, i) => (
         <Col key={i} className="" sm={12} lg={4} md={6}>
-          {' '}
-          <Sponsor srcx={s.src} />{' '}
+          <Sponsor srcx={s.src} altText={`Sponsor ${i + 1}`} />
         </Col>
       ))}
     </Row>
@@ -138,7 +137,11 @@ export default function HomePage() {
         <Row className="sponsorSection" id="sponsors">
           <SponsorsHead />
           <SponsorUS />
-          {sponsorLogos.map(SponsorGroup)}
+          {sponsorLogos.map((group, index) => (
+            <div key={index} className="SponsorGroup">
+              {SponsorGroup(group)}
+            </div>
+          ))}
         </Row>
         {/* ********Sponsors ending here ***** */}
 
