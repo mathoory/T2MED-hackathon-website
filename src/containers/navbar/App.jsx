@@ -2,7 +2,7 @@ import {useEffect, useRef, useState} from 'react';
 import {Route, BrowserRouter as Router, Switch} from 'react-router-dom';
 import {HashLink as Link} from 'react-router-hash-link';
 import styled from 'styled-components';
-import technion100 from '../../Module/Assets/sponsorsLogos/technion100-modified.png';
+import technion100 from '../../Module/Assets/sponsorsLogos/technion100_medicine.png';
 import HomePage from '../Home/HomePage';
 import logoClose from './assets/ham-c.svg';
 import hamLogo from './assets/ham.svg';
@@ -93,33 +93,36 @@ const NAVBAR = ({}) => {
 
   return (
     <Router>
+      {/* Mobile logo, always visible */}
+      <img className="mobile-logo" src={technion100} alt="Company Logo" />
+
       <nav className={`nav_bar ${isOffset && 'nav_bar-offset-crossed'}`}>
         <Wrapper toggle={toggle}>
           <div className="nav-content" ref={navigation}>
             <ul>
               <li>
                 <Link to={`#home`}>
-                  <span className="links">Home </span>{' '}
+                  <span className="links">Home</span>
                 </Link>
               </li>
               <li>
                 <Link to={`#faq`}>
-                  <span className="links">FAQ </span>{' '}
+                  <span className="links">FAQ</span>
                 </Link>
               </li>
               <li>
                 <Link to={`#prizes`}>
-                  <span className="links">Prizes </span>{' '}
+                  <span className="links">Prizes</span>
                 </Link>
               </li>
               <li>
                 <Link to={`#sponsors`}>
-                  <span className="links">Sponsors </span>{' '}
+                  <span className="links">Sponsors</span>
                 </Link>
               </li>
               <li>
                 <Link to={`#team`}>
-                  <span className="links">Team </span>{' '}
+                  <span className="links">Team</span>
                 </Link>
               </li>
               <img

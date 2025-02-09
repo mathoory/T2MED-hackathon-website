@@ -14,47 +14,52 @@
   }
 }
 
-  @media (min-width: 1000px) {
-    .nav_bar-offset-crossed {
-      background-color: #57DFB7;
-      height: 72px;
-      box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
-    }
-    .nav_bar-offset-crossed .links {
-      color: #012A43; /* Blue color after scrolling */
-    }
+@media (min-width: 1000px) {
+  .nav_bar-offset-crossed {
+    background-color: #57DFB7;
+    height: 72px;
+    box-shadow: 0 8px 16px 0 rgba(145, 158, 171, 0.16);
   }
+  .nav_bar-offset-crossed .links {
+    color: #012A43; /* Blue color after scrolling */
+  }
+}
 
-  .s-open,
-  .s-close {
-    display: none;
-  }
-  .nav-inner {
-    width: 30%;
-  }
-  ul {
-    position: relative;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: baseline;
-    height: 100%;
-    align-items: center;
-  }
-  nav ul li {
-    display: inline-block;
-  }
-  .links {
-    color: #fff; /* Default white color before scroll */
-    transition: 0.5s;
-    font-weight: 300;
-    letter-spacing: 1.3px;
-  
-    &:hover {
-      opacity: 0.8;
-    }
-  }
+.s-open,
+.s-close {
+  display: none;
+}
 
+.nav-inner {
+  width: 30%;
+}
+
+ul {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: baseline;
+  height: 100%;
+  align-items: center;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+.links {
+  color: #fff; /* Default white color before scroll */
+  transition: 0.5s;
+  font-weight: 300;
+  letter-spacing: 1.3px;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+/* Desktop Logo */
 .company-logo {
   position: absolute;
   top: 10px; /* Adjust based on your navbar height */
@@ -63,37 +68,89 @@
   width: auto;
 }
 
-@media (max-width: 768px) { /* Adjust breakpoint as needed */
+/* Hide the desktop logo on mobile */
+@media (max-width: 1000px) {
   .company-logo {
-    height: 30px; /* Smaller size for mobile */
-    top: 5px; /* Adjust top position for better alignment */
-    right: 10px; /* Adjust right position for mobile */
+    display: none; /* Hide navbar logo when below 1000px */
   }
 }
 
-  @media (max-width: 1000px) {
-    .ease {
-      background: #484848;
-      height: 75%;
-      opacity: 0.2;
-      pointer-events: none;
-    }
-    ul {
-      flex-direction: column;
-      padding: 30px 20;
-    }
-    .s-open {
-      display: inline;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      z-index: -1;
-    }
-    .s-close {
-      display: block;
-      position: absolute;
-      right: 10px;
-      top: 10px;
-    }
+/* Mobile Layout Adjustments */
+@media (max-width: 1000px) {
+  .ease {
+    background: #484848;
+    height: 75%;
+    opacity: 0.2;
+    pointer-events: none;
   }
 
+  ul {
+    flex-direction: column;
+    padding: 30px 20px;
+  }
+
+  /* Mobile Menu Icon */
+  .s-open {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1001;
+  }
+
+  .s-close {
+    display: block;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+  }
+}
+
+/* Mobile Logo (Always Visible Outside the Navbar on Mobile) */
+.mobile-logo {
+  display: none; /* Hide by default */
+
+  @media (max-width: 1000px) {
+    display: block;
+    position: fixed; /* Make it fixed to scroll with the page */
+    top: 10px; /* Adjust to avoid overlap with navbar */
+    left: 10px; /* Moves logo to the left */
+    height: 40px; /* Adjust as needed */
+    width: auto;
+    z-index: 1000;
+  }
+}
+
+/* Desktop and Tablet layout - For screen sizes between 768px and 1000px */
+@media (min-width: 768px) and (max-width: 1000px) {
+  /* Hide desktop logo inside navbar */
+  .company-logo {
+    display: none; /* Hide navbar logo */
+  }
+
+  /* Show mobile logo outside the navbar */
+  .mobile-logo {
+    display: block;
+    position: fixed; /* Keeps logo fixed as you scroll */
+    top: 10px;
+    left: 10px;
+    height: 40px;
+    width: auto;
+    z-index: 1000;
+  }
+
+  /* Ensure hamburger icon shows on medium screens */
+  .s-open {
+    display: inline;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-content {
+    padding-top: 50px; /* Pushes text down */
+  }
+}

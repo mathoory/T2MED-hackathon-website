@@ -38,6 +38,9 @@ npm install
 
 # start the server
 npm start
+
+# to build output directory
+npm run build
 ```
 
 `This will start client app on localhost:3000`
