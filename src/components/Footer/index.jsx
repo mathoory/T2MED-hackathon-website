@@ -110,11 +110,17 @@ const Footer = () => {
               <p>Terms of Use</p>
             </a>
           )}
-          {/* <p>Made with ❤️</p> */}
+          <p>
+            Designed by{' '}
+            <a
+              href="https://www.instagram.com/mariarchiedesign"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Maria Shadrin
+            </a>
+          </p>
         </div>
-        {/* {template && viewTemplate && (
-          <GithubTemplate hideTemplate={() => setViewTemplate(false)} />
-        )} */}
       </div>
     </div>
   );

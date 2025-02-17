@@ -147,6 +147,15 @@ export default function HomePage() {
 
         {media && <Birds top="120vh" left="0vh" type="" />}
 
+        {/* ********Judges here *****
+
+        <h1 id="team">Our Judges</h1>
+        <p className="judges-info-text">
+  <span className="highlight">Tap</span> or <span className="highlight">Hover</span> to learn more about the judges!
+</p>
+
+        {JudgesInfo.map(TeamMembers)} */}
+
         {/* ********Team here ***** */}
         <h1 id="team">Our Team</h1>
         {/* {FOOTER.JOIN_TEAM.required && (
@@ -169,8 +178,6 @@ export default function HomePage() {
             content="Interested in being a mentor?"
           />
         )}
-        {/* {JudgesInfo.map(TeamMembers)} */}
-        {/* ********Team ending here ***** */}
       </Container>
       <Footer />
     </div>

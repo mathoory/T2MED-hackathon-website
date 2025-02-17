@@ -20,16 +20,23 @@ const JoinTeam: React.FC<IJoinTeam> = ({placeholder, formLink, content}) => {
 };
 
 const Member = ({info}: {info: any}) => {
-  const {github, role, name, img, linkedin} = info;
+  const {github, role, name, img, linkedin, bio} = info;
   return (
     <div className="member">
-      <img src={img} alt="Limbo hack"></img>
-      <div className="members-link">
-        <h3>{name}</h3>
-        <p>{role}</p>
-        <a href={linkedin}>
-          <i className="fab fa-2x fa-linkedin"></i>
-        </a>
+      <img src={img} alt={`${name}'s photo`} />
+      <h3>{name}</h3>
+      <p className="role">{role}</p>
+      {bio && (
+        <div className="bio-box">
+          <p className="bio">{bio}</p>
+        </div>
+      )}
+      <div className="social-links">
+        {linkedin && (
+          <a href={linkedin} target="_blank" rel="noopener noreferrer">
+            <i className="fab fa-2x fa-linkedin"></i>
+          </a>
+        )}
       </div>
     </div>
   );

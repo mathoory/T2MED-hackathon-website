@@ -8,12 +8,21 @@ import hackathonLogo from './Assets/hackathonLogo.png';
 
 import boy from './Assets/boy.png';
 
+import biztec from './Assets/sponsorsLogos/biztec.png';
 import bnaizion from './Assets/sponsorsLogos/bnai_zion-modified.png';
 import carmel from './Assets/sponsorsLogos/carmel-modified.png';
 import haemek from './Assets/sponsorsLogos/haemek-modified.png';
+import hhi from './Assets/sponsorsLogos/hhi.png';
 import hililyafe from './Assets/sponsorsLogos/hilel_yafe-modified.png';
-import medicine from './Assets/sponsorsLogos/medicine-modified.png';
 import rambam from './Assets/sponsorsLogos/Rambam-modified.png';
+import rappaport from './Assets/sponsorsLogos/rappaport.png';
+import road2 from './Assets/sponsorsLogos/road2.png';
+import rticc from './Assets/sponsorsLogos/rticc-logo.png';
+
+import ami from './Assets/judgei/ami.jpg';
+import avi from './Assets/judgei/avi.jpg';
+import benny from './Assets/judgei/benny.jpg';
+import yaron from './Assets/judgei/yaron.jpg';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -289,45 +298,34 @@ const TeamInfo = [
 
 const JudgesInfo = [
   [
-    //   //Array 1
-    //   {
-    //     name: 'Rehan',
-    //     role: 'Organizer',
-    //     github: '',
-    //     linkedin: '',
-    //     img: irina
-    //   },
-    //   {
-    //     name: 'Moon',
-    //     role: 'Organizer',
-    //     github: '',
-    //     linkedin: '',
-    //     img: moon
-    //   },
-    //   {
-    //     name: 'Ryah Garcia',
-    //     role: 'Organizer',
-    //     github: '',
-    //     linkedin: '',
-    //     img: Ryah
-    //   }
-    // ],
-    // [
-    //   //Array 2
-    //   {
-    //     name: 'Lyanola',
-    //     role: 'Organizer',
-    //     github: '',
-    //     linkedin: '',
-    //     img: lyin
-    //   },
-    //   {
-    //     name: 'Zoheb',
-    //     role: 'Organizer',
-    //     github: '',
-    //     linkedin: '',
-    //     img: zoha
-    //   }
+    //Array 1
+    {
+      name: 'Prof. Ami Aronheim',
+      role: 'Dean, Ruth & Bruce Rappaport Faculty of Medicine, Technion',
+      bio: 'Prof. Ami Aronheim ifs a leading molecular genetics researcher specializing in protein-protein interactions and signal transduction. With a Ph.D. in Biochemistry from the Weizmann Institute and postdoctoral training at UC San Diego, he established his laboratory in the Faculty of Medicine at the Technion in 1996, has published over 70 articles, and holds five patents. His work explores cancer-cardiac interactions, shedding light on disease progression. A longtime faculty member at the Technion, he previously served as Senior Vice Dean and, since 2023, has been the Dean of the Faculty of Medicine.',
+      img: ami
+    },
+    {
+      name: 'Dr. Avi Goldberg',
+      role: 'CEO, Carmel Hospital | Expert in Healthcare Management & Emergency Preparedness',
+      bio: 'Dr. Avi Goldberg is a senior healthcare executive with extensive experience in hospital leadership, emergency preparedness, and health system management. Since 2015, he has served as CEO of Carmel Hospital, following his tenure as CEO of Yoseftal Hospital. With an MPA from Harvard and an MHA from Ben-Gurion University, he specializes in strategic healthcare management and crisis response. He also lectures on healthcare management at the Technion and serves on Israel’s National Health Council.',
+      img: avi
+    },
+    {
+      name: 'Dr. Abbou Benyamine',
+      role: 'Deputy Director, Hillel Yaffe Medical Center',
+      bio: 'Dr. Abbou Benyamine is a seasoned healthcare executive and expert in general surgery with extensive experience in medical leadership and hospital management. He currently holds the position of Deputy Director at Hillel Yaffe Medical Center. With an MHA in Health Systems Management from BGU and advanced executive training from Tel Aviv University, he specializes in healthcare administration, strategic planning, and operational excellence.',
+      img: benny
+    }
+  ],
+  [
+    //Array 2
+    {
+      name: 'Yaron Sheffer',
+      role: 'Healthcare Innovation & Strategy Leader',
+      bio: 'A visionary leader with over 18 years of experience in healthcare innovation, strategic planning, and operational management. As Director of Strategy & Innovation at Emek Medical Center, he drives international partnerships, entrepreneurship, and hospital growth initiatives. Previously, he managed healthcare operations for Maccabi, overseeing large-scale medical teams and multimillion-dollar budgets. Passionate about digital health, he mentors startups and leads executive training programs. With a background in military medical training and an MBA in Nonprofit Management, he blends leadership, strategy, and hands-on execution to transform healthcare systems.',
+      img: yaron
+    }
   ]
 ];
 
@@ -338,8 +336,10 @@ const JudgesInfo = [
  */
 
 const sponsorLogos = [
-  [{src: medicine}, {src: carmel}, {src: haemek}], //Array 1
-  [{src: hililyafe}, {src: rambam}, {src: bnaizion}] //Array 2
+  [{src: carmel}, {src: haemek}, {src: hililyafe}], //Array 1
+  [{src: rambam}, {src: bnaizion}, {src: road2}], //Array 2
+  [{src: hhi}, {src: biztec}, {src: rticc}], //Array 3
+  [{src: rappaport}] //Array 3
 ];
 
 /** Instructions
