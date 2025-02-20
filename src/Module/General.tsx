@@ -354,6 +354,11 @@ const frequentlyAskedQuestions = [
           'A hackathon is a collaborative event where participants solve challenges and create innovative solutions over a limited period of time.'
       },
       {
+        label: 'What makes this hackathon special?',
+        content:
+          'T2MED is the only hackathon where cutting-edge medical innovation meets hands-on clinical expertise. Unlike other hackathons, we bring together the brightest minds from the faculty of medicine to collaborate with other Technion faculties. You’ll work directly with top physicians, clinical researchers, and hospital innovators from leading medical centers. Our expert mentors aren’t just tech specialists—they are practicing doctors, surgeons, and medtech pioneers who face real-world challenges every day. Plus, we have exclusive access to hospitals and specialized medtech professionals who will guide teams in developing solutions that can truly impact patient care. This is your chance to collaborate with the best in medicine, tech, and entrepreneurship, and turn your ideas into real, clinically viable solutions!'
+      },
+      {
         label: 'Who can participate?',
         content:
           'Students from all faculties at the Technion, including technology, sciences, medicine, and business.'
@@ -364,24 +369,21 @@ const frequentlyAskedQuestions = [
           'No, you can register individually and form a team at the orientation meeting on 5 May 2025.'
       },
       {
-        label: 'How many people can be in a team?',
+        label: 'What will we do during the hackathon?',
         content:
-          'Teams should have 4-5 members, including at least one medical student.'
+          'During the hackathon, you will collaborate with a diverse team to tackle real-world medical challenges, develop innovative solutions, and create prototypes. You’ll receive mentorship from industry experts, gain hands-on experience with cutting-edge technologies, and pitch your ideas to a panel of judges.'
       }
     ],
     [
       {
+        label: 'How many people can be in a team?',
+        content:
+          'Teams should have 4-5 members, including at least one medical student.'
+      },
+      {
         label: 'What if I don’t have a project idea?',
         content:
           'No worries! You can join a team and brainstorm ideas together during the hackathon.'
-      },
-      {
-        label: 'I have more questions?',
-        content: 'Reach us directly, we would be happy to help you.',
-        link: {
-          text: 'Send us an email',
-          url: 'mailto:t2medtechnion@gmail.com'
-        }
       },
       {
         label: 'Are there prizes?',
@@ -391,6 +393,14 @@ const frequentlyAskedQuestions = [
       {
         label: 'Will there be swag?',
         content: 'Yes! All participants will receive exclusive T2MED swag.'
+      },
+      {
+        label: 'I have more questions?',
+        content: 'Reach us directly, we would be happy to help you.',
+        link: {
+          text: 'Send us an email',
+          url: 'mailto:t2medtechnion@gmail.com'
+        }
       }
     ]
   ]
