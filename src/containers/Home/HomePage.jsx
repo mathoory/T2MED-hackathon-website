@@ -21,6 +21,7 @@ import {JoinTeam, Member} from '../../components/Team';
 import {
   FOOTER,
   frequentlyAskedQuestions,
+  JudgesInfo,
   Prizeinfo,
   sponsorLogos,
   TeamInfo
@@ -147,14 +148,16 @@ export default function HomePage() {
 
         {media && <Birds top="120vh" left="0vh" type="" />}
 
-        {/* ********Judges here *****
+        {/* ********Judges here **** */}
 
         <h1 id="team">Our Judges</h1>
         <p className="judges-info-text">
-  <span className="highlight">Tap</span> or <span className="highlight">Hover</span> to learn more about the judges!
-</p>
+          <span className="highlight">Tap</span> or{' '}
+          <span className="highlight">Hover</span> to learn more about the
+          judges!
+        </p>
 
-        {JudgesInfo.map(TeamMembers)} */}
+        {JudgesInfo.map(TeamMembers)}
 
         {/* ********Team here ***** */}
         <h1 id="team">Our Team</h1>

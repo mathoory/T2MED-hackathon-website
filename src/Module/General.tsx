@@ -22,7 +22,11 @@ import rticc from './Assets/sponsorsLogos/rticc-logo.png';
 import ami from './Assets/judgei/ami.jpg';
 import avi from './Assets/judgei/avi.jpg';
 import benny from './Assets/judgei/benny.jpg';
+import eliezer from './Assets/judgei/eliezer.png';
+import lital from './Assets/judgei/lital.png';
+import nissan from './Assets/judgei/nissan.jpg';
 import yaron from './Assets/judgei/yaron.jpg';
+import yona from './Assets/judgei/yona.png';
 
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
@@ -103,9 +107,34 @@ const schedule = [
     day: '5-5-2025',
     events: [
       {
-        title: 'Orientation Meeting',
-        timings: '9:00 AM - 12:00 PM',
-        link: 'https://google.com'
+        title: 'Orientation Day: Gathering & Light Refreshments',
+        timings: '16:00 – 17:00',
+        link: ''
+      },
+      {
+        title: 'Orientation Day: Opening Talks',
+        timings: '17:00 - 18:15',
+        link: ''
+      },
+      {
+        title: 'Orientation Day: Round Tables & Networking',
+        timings: '18:15 – 19:30',
+        link: ''
+      },
+      {
+        title: 'Light Refreshments',
+        timings: '19:30 - 20:00',
+        link: ''
+      },
+      {
+        title: 'Orientation Day: Pitches',
+        timings: '20:15 - 20:45',
+        link: ''
+      },
+      {
+        title: 'Concluding Remarks & Final Idea Submission',
+        timings: '',
+        link: ''
       }
     ]
   },
@@ -302,17 +331,17 @@ const JudgesInfo = [
     {
       name: 'Prof. Ami Aronheim',
       role: 'Dean, Ruth & Bruce Rappaport Faculty of Medicine, Technion',
-      bio: 'Prof. Ami Aronheim ifs a leading molecular genetics researcher specializing in protein-protein interactions and signal transduction. With a Ph.D. in Biochemistry from the Weizmann Institute and postdoctoral training at UC San Diego, he established his laboratory in the Faculty of Medicine at the Technion in 1996, has published over 70 articles, and holds five patents. His work explores cancer-cardiac interactions, shedding light on disease progression. A longtime faculty member at the Technion, he previously served as Senior Vice Dean and, since 2023, has been the Dean of the Faculty of Medicine.',
+      bio: 'Prof. Ami Aronheim is a leading molecular genetics researcher specializing in protein-protein interactions and signal transduction. With a Ph.D. in Biochemistry from the Weizmann Institute and postdoctoral training at UC San Diego, he established his laboratory in the Faculty of Medicine at the Technion in 1996, has published over 70 articles, and holds five patents. His work explores cancer-cardiac interactions, shedding light on disease progression. A longtime faculty member at the Technion, he previously served as Senior Vice Dean and, since 2023, has been the Dean of the Faculty of Medicine.',
       img: ami
     },
     {
       name: 'Dr. Avi Goldberg',
-      role: 'CEO, Carmel Hospital | Expert in Healthcare Management & Emergency Preparedness',
-      bio: 'Dr. Avi Goldberg is a senior healthcare executive with extensive experience in hospital leadership, emergency preparedness, and health system management. Since 2015, he has served as CEO of Carmel Hospital, following his tenure as CEO of Yoseftal Hospital. With an MPA from Harvard and an MHA from Ben-Gurion University, he specializes in strategic healthcare management and crisis response. He also lectures on healthcare management at the Technion and serves on Israel’s National Health Council.',
+      role: 'CEO, Carmel Medical Center',
+      bio: 'Dr. Avi Goldberg is a senior healthcare executive with extensive experience in hospital leadership, and health system management. He serves as CEO of Carmel medical center Since 2015, following his term as CEO of Yoseftal Hospital in Eilat. With an MPA from Harvard and an MHA from Ben-Gurion University, he specializes in strategic healthcare management and crisis response. He also lectures on healthcare management at the Technion and serves on Israel’s National Health Council.',
       img: avi
     },
     {
-      name: 'Dr. Abbou Benyamine',
+      name: 'Dr. Benyamine Abbou',
       role: 'Deputy Director, Hillel Yaffe Medical Center',
       bio: 'Dr. Abbou Benyamine is a seasoned healthcare executive and expert in general surgery with extensive experience in medical leadership and hospital management. He currently holds the position of Deputy Director at Hillel Yaffe Medical Center. With an MHA in Health Systems Management from BGU and advanced executive training from Tel Aviv University, he specializes in healthcare administration, strategic planning, and operational excellence.',
       img: benny
@@ -322,9 +351,36 @@ const JudgesInfo = [
     //Array 2
     {
       name: 'Yaron Sheffer',
-      role: 'Healthcare Innovation & Strategy Leader',
+      role: 'Strategic & Innovation Director, Emek Medical Center',
       bio: 'A visionary leader with over 18 years of experience in healthcare innovation, strategic planning, and operational management. As Director of Strategy & Innovation at Emek Medical Center, he drives international partnerships, entrepreneurship, and hospital growth initiatives. Previously, he managed healthcare operations for Maccabi, overseeing large-scale medical teams and multimillion-dollar budgets. Passionate about digital health, he mentors startups and leads executive training programs. With a background in military medical training and an MBA in Nonprofit Management, he blends leadership, strategy, and hands-on execution to transform healthcare systems.',
       img: yaron
+    },
+    {
+      name: 'Prof. Eliezer Shalev',
+      role: 'President, Tel-Hai Academic College | Expert in Obstetrics & Gynecology',
+      bio: 'Prof. Eliezer Shalev is a groundbreaking researcher and leader in obstetrics, gynecology, and fetal medicine, formerly heading the Ultrasound Unit at Sheba Medical Center (1988) And the Women & Maternity Division at HaEmek Medical Center (1989-2016). He served as Dean of the Technion Faculty of Medicine (2011–2016) and later Executive Pro-vice chancellor & Vice-Chancellor at Technion’s Guangdong campus in China. Since 2022, he has been President of Tel-Hai Academic College, leading its transition into the University of the Galilee. A recipient of the 2017 Lifetime Achievement Award in Medicine, he continues to pioneer research in childbirth and fertility. He is also the founder of the T2MED Hackathon, driving medical innovation.',
+      img: eliezer
+    },
+    {
+      name: 'Dr. Yona Vaisbuch',
+      role: 'Ear & Skull Base Surgeon | Deputy Director, ENT & Surgical Division, Rambam | Head of Transformation | President, Biodesign Israel',
+      bio: 'Dr. Yona Vaisbuch - Biodesign Israel founder and president. Dr. Vaisbuch is a graduate of the Sackler Faculty of Medicine at Tel Aviv University, Dr Vaisbuch specialized in otorhinolaryngology (ear, nose and throat medicine) at the Rabin Medical Center and underwent advanced training for ear and skull base surgery at Stanford University in California. He currently serves as a guest professor at Stanford and a specialist physician at Rambam Medical Center. He is the founder and former chairman of Mirsham, the Medical Interns’ Organization and a member of the Taub Center’s Health Committee. In addition, Dr. Vaisbuch serves as a medical advisor for medical startups and is a founding partner in a few medical ventures.',
+      img: yona
+    }
+  ],
+  [
+    //Array 3
+    {
+      name: 'Lital Attia',
+      role: 'Director of BizTEC Entrepreneurship Program at Technion',
+      bio: 'Dr. Lital Attia is a seasoned professional in medical science, business strategy, and entrepreneurship. Holding a PhD in Medical Science and an MBA, she specializes in identifying high-impact technologies and transforming them into scalable ventures. With a strong background in deep-tech and life sciences, she excels at bridging innovation with business success, driving growth and impact.',
+      img: lital
+    },
+    {
+      name: 'Nissan Elimelech',
+      role: "Medtech serial entrepreneur, Augmedics' Founder & ex-CEO",
+      bio: 'Nissan is a serial entrepreneur with two decades’ experience in various medical device markets and the inventor of 15 patents. He founded Augmedics, a MedTech company which develops and commercializes the xvision™ – The first Augmented-Reality Guidance System for spine surgery. Nissan served the company as its CEO for more than 7 years, raised $63m from top-tier US VCs, and led it from inception to a multi-million-dollar revenue organization with a full-scale US nationwide commercial team. Prior to Augmedics, he worked in Medtronic at the spine surgery unit, and in Neopharm at the general surgery unit. In addition, he co-founded and was the inventor of another medical device start-up, Medizn, which developed a smart surgical hernia mesh. Nissan is a Biomedical engineer and MBA graduate.',
+      img: nissan
     }
   ]
 ];
