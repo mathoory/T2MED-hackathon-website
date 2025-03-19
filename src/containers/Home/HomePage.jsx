@@ -159,7 +159,21 @@ export default function HomePage() {
 
         {JudgesInfo.map(TeamMembers)}
 
+        <h1 id="team">Our Mentors</h1>
+        {FOOTER.JOIN_TEAM.required && (
+          <div className="mentor-section">
+            <JoinTeam
+              placeholder="Contact Us"
+              formLink={SOCIALS.email}
+              content="Interested in being a mentor?"
+            />
+          </div>
+        )}
+
         {/* ********Team here ***** */}
+        {<br></br>}
+        {<br></br>}
+
         <h1 id="team">Our Team</h1>
         {/* {FOOTER.JOIN_TEAM.required && (
           <JoinTeam
@@ -168,19 +182,9 @@ export default function HomePage() {
             content="Interested in joining our team"
           />
         )} */}
+
         {TeamInfo.map(TeamMembers)}
         {/* ********Team ending here ***** */}
-
-        {/* ********Judges here ***** */}
-
-        <h1 id="team">Mentors</h1>
-        {FOOTER.JOIN_TEAM.required && (
-          <JoinTeam
-            placeholder="Contact Us"
-            formLink={SOCIALS.email}
-            content="Interested in being a mentor?"
-          />
-        )}
       </Container>
       <Footer />
     </div>
