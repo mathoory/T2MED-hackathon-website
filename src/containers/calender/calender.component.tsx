@@ -11,6 +11,7 @@ import * as H from './style';
 const CalenderView = () => {
   const contextTesting = useContext(calenderContext);
   const {state, dispatch} = contextTesting;
+
   return (
     <div className="card-body">
       {['S', 'M', 'T', 'W', 'T', 'F', 'S'].map((day, j) => (
@@ -32,7 +33,10 @@ const CalenderView = () => {
               dispatch({type: 'UPDATE_CALENDER_VIEW', data: 2});
               dispatch({
                 type: 'SHOW_EVENTS_FOR_SELECTED_DATE',
-                data: state.dates[j].events
+                data: {
+                  events: state.dates[j].events,
+                  day: `${state.dates[j].day}-${state.month}-${state.year}`
+                }
               });
             } else {
               alert('No events');
@@ -54,9 +58,58 @@ const CalenderView = () => {
 const EventsView = () => {
   const contextTesting = useContext(calenderContext);
   const {state} = contextTesting as any;
+
+  const addToGoogleCalendar = (event: any, eventDay: string) => {
+    if (!event.timings || !eventDay) {
+      alert('This event is missing date or time.');
+      return;
+    }
+
+    // Normalize weird dashes in day
+    const safeDay = eventDay.replace(/–|—/g, '-');
+    const [day, month, year] = safeDay.split('-').map(Number);
+    const eventDate = new Date(year, month - 1, day); // month is 0-based
+
+    // Normalize weird dashes in timings
+    const safeTiming = event.timings.replace(/–|—/g, '-');
+    const [startStr, endStr] = safeTiming
+      .split('-')
+      .map((s: string) => s.trim());
+
+    if (!startStr || !endStr) {
+      alert('Invalid timings format.');
+      return;
+    }
+
+    const parseTime = (baseDate: Date, timeStr: string) => {
+      const [hours, minutes] = timeStr.split(':').map(Number);
+      const date = new Date(baseDate);
+      date.setHours(hours, minutes, 0, 0);
+      return date;
+    };
+
+    const startTime = parseTime(eventDate, startStr);
+    const endTime = parseTime(eventDate, endStr);
+
+    const formatDate = (date: Date) => {
+      return date.toISOString().replace(/[-:]/g, '').split('.')[0] + 'Z';
+    };
+
+    const startFormatted = formatDate(startTime);
+    const endFormatted = formatDate(endTime);
+
+    const url = `https://www.google.com/calendar/render?action=TEMPLATE&text=${encodeURIComponent(
+      event.title
+    )}&dates=${startFormatted}/${endFormatted}&details=${encodeURIComponent(
+      event.title
+    )}`;
+
+    window.open(url, '_blank');
+  };
+
   return (
     <H.EventContainer>
-      {state.selectedData.map((event: any, j: number) => (
+      {state.selectedData.events.map((event: any, j: number) => (
         <H.Event
           key={j}
           onClick={() => {
@@ -67,7 +120,13 @@ const EventsView = () => {
             <h3>{event.title}</h3>
             <p>{event.timings}</p>
           </div>
-          <button>
+          <button
+            type="button"
+            onClick={e => {
+              e.stopPropagation(); // Prevent event div click
+              addToGoogleCalendar(event, state.selectedData.day);
+            }}
+          >
             <b>Add To Calendar</b>
           </button>
         </H.Event>
