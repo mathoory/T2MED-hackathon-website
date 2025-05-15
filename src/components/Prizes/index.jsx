@@ -10,10 +10,11 @@ function PrizeHeading(props) {
 
 function FirstPrize(props) {
   return (
-    <div className="Prizes">
-      {props.icon}
-      <h2>{props.type}</h2>
-      <p>{props.content}</p>
+    <div className="PrizeCard">
+      <h2 className="prize-title">{props.title}</h2>
+      <div className="prize-bottom-align">
+        <img src={props.image} alt="Prize" className="prize-image" />
+      </div>
     </div>
   );
 }

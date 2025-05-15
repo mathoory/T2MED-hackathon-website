@@ -48,7 +48,7 @@ function Sponsor(props) {
 function SponsorUS() {
   return (
     <div className="joinT sponsorUS">
-      <h3>Interested in Sponsoring</h3>
+      <h3>Interested in Sponsoring?</h3>
       <a href={SOCIALS.email}>
         <Btn
           className="sponsor_btn"

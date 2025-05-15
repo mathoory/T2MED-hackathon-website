@@ -23,13 +23,12 @@ import ami from './Assets/judgei/ami.jpg';
 import avi from './Assets/judgei/avi.jpg';
 import benny from './Assets/judgei/benny.jpg';
 import eliezer from './Assets/judgei/eliezer.png';
-import lital from './Assets/judgei/lital.png';
+import hadas from './Assets/judgei/hadas.jpeg';
 import nissan from './Assets/judgei/nissan.jpg';
 import ronya from './Assets/judgei/ronya.jpeg';
 import yaakov from './Assets/judgei/yaakov.jpg';
 import yaron from './Assets/judgei/yaron.jpg';
 import yona from './Assets/judgei/yona.png';
-
 /** Put all your sponsors logo inside folder `sponsorLogos`
  * and import them in the above and update `src` in sponsorLogos
  * or you can provide a cloud link in src
@@ -42,6 +41,11 @@ import irina from './Assets/teami/irina.jpeg';
 import mattan from './Assets/teami/Mattan Hoory.jpeg';
 import or from './Assets/teami/Or.jpeg';
 import yoel from './Assets/teami/Yoel_levy.jpg';
+
+// Prizees
+import first from './Assets/prizesi/first.png';
+import second from './Assets/prizesi/second.png';
+import third from './Assets/prizesi/third.png';
 
 const TOP_SECTION = {
   TITLE: 'T2MED 2025',
@@ -109,38 +113,47 @@ const schedule = [
     day: '5-5-2025',
     events: [
       {
-        title: 'Orientation Day: Gathering & Refreshments',
+        title: 'Gathering & Refreshments',
         timings: '16:30 – 17:00',
         link: ''
       },
       {
-        title: 'Opening Talks: Welcome & Introduction',
-        timings: '17:00 - 17:15',
+        title:
+          'Opening Talks (Auditorium): The T2MED Team – About T2MED and the orientation day',
+        timings: '17:00 – 17:15',
         link: ''
       },
       {
         title:
-          'Guest Talk: Dr. Shay Perek - Need-Based Innovation using the Biodesign Method',
-        timings: '17:15 - 18:15',
+          'Guest Talk (Auditorium): Dr. Shay Perek – Need-Based Innovation using the Biodesign Method',
+        timings: '17:15 – 18:15',
         link: ''
       },
       {
-        title: 'Round Tables: Team Building & Ideation with Mentors',
-        timings: '18:30 – 19:45',
+        title:
+          'Welcome Remarks (Food Hall): Prof. Yaron Har-Shai, Vice Dean for Strategic Development',
+        timings: '18:30 – 18:45',
+        link: ''
+      },
+      {
+        title:
+          'Round Tables (Food Hall): Team Building & Ideation – Participants and Mentors',
+        timings: '18:45 – 19:45',
         link: ''
       },
       {
         title: 'Break',
-        timings: '19:45 - 20:00',
+        timings: '19:45 – 20:00',
         link: ''
       },
       {
-        title: 'Pitches: Share your idea or challenge (3 min)',
-        timings: '20:00 - 20:30',
+        title: 'Pitches (Food Hall): Share your idea or challenge (3 min)',
+        timings: '20:00 – 20:30',
         link: ''
       },
       {
-        title: 'Concluding Remarks & Online Check-In',
+        title:
+          'Concluding Remarks & Online Check-In: Teams must confirm their registration',
         timings: '20:30',
         link: ''
       }
@@ -280,26 +293,19 @@ const schedule = [
  * create as many arrays you want all prizes will be rendered
  * in a group of 3.
  */
-
 const Prizeinfo = [
   [
     {
-      icon: <i className="first fas fa-4x fa-trophy"></i>,
-      type: 'First Place',
-      content:
-        'The best project, judged by innovation, feasibility, and impact, will win the prizes worth ten thousand shekels, more prizes to be announced soon!'
+      image: first,
+      title: '1st Place'
     },
     {
-      icon: <i className="second fas fa-4x fa-medal"></i>,
-      type: 'Second Place',
-      content:
-        'The runner-up will receive an exciting prize package worth thousands of shekels, recognizing their outstanding creativity and execution. Additional surprises await!'
+      image: second,
+      title: '2nd Place'
     },
     {
-      icon: <i className="third fas fa-4x fa-award"></i>,
-      type: 'Third Place',
-      content:
-        'A standout project will be recognized with the third-place prize worth hundereds of shekels.'
+      image: third,
+      title: '3rd Place'
     }
   ]
 ];
@@ -395,12 +401,6 @@ const JudgesInfo = [
   [
     //Array 3
     {
-      name: 'Lital Attia',
-      role: 'Director of BizTEC Entrepreneurship Program at Technion',
-      bio: 'Dr. Lital Attia is a seasoned professional in medical science, business strategy, and entrepreneurship. Holding a PhD in Medical Science and an MBA, she specializes in identifying high-impact technologies and transforming them into scalable ventures. With a strong background in deep-tech and life sciences, she excels at bridging innovation with business success, driving growth and impact.',
-      img: lital
-    },
-    {
       name: 'Nissan Elimelech',
       role: "Medtech serial entrepreneur, Augmedics' Founder & ex-CEO",
       bio: 'Nissan is a serial entrepreneur with two decades’ experience in various medical device markets and the inventor of 15 patents. He founded Augmedics, a MedTech company which develops and commercializes the xvision™ – The first Augmented-Reality Guidance System for spine surgery. Nissan served the company as its CEO for more than 7 years, raised $63m from top-tier US VCs, and led it from inception to a multi-million-dollar revenue organization with a full-scale US nationwide commercial team. Prior to Augmedics, he worked in Medtronic at the spine surgery unit, and in Neopharm at the general surgery unit. In addition, he co-founded and was the inventor of another medical device start-up, Medizn, which developed a smart surgical hernia mesh. Nissan is a Biomedical engineer and MBA graduate.',
@@ -411,15 +411,22 @@ const JudgesInfo = [
       role: 'Entrepreneur, Endospot Founder & CEO',
       bio: 'Ronya Rubinstein is an entrepreneur with a passion for navigating the intersections of science, business, regulations, ethics, patents, legal,  reimbursement and people. Formerly, director of the R&D unit at Rambam hospital, Ronya has vast expertise in clinical trials, technology transfer and digital health, held various board positions including at Mego-Afkek and MindUp incubator. Ronya also serves as the head of the health and gender committee at the National Committee for advancing Women in Science.',
       img: ronya
-    }
-  ],
-  [
-    //Array 4
+    },
     {
       name: 'Yaakov Diminsky',
       role: 'CEO at Road2',
       bio: 'Yaakov Diminsky holds an MSc in Biomedical Engineering and an MBA from the Technion. He specializes in developing business and technological strategies for early-stage startups. Yaakov has a background in leading R&D for technologies that combine bio-sensing with artificial intelligence. He also lectures on business and technological development in the deep-tech field as part of startup acceleration programs.',
       img: yaakov
+    }
+  ],
+  [
+    //Array 4
+
+    {
+      name: 'Hadas Shachaf',
+      role: 'Director of Pharmaceutical Services, Bnai Zion Medical Center',
+      bio: 'Hadas Shachaf is the Director of Pharmacy Services at Bnei Zion Medical Center in Haifa. She focuses on improving medication safety and operational efficiency through pharmacy automation and cross-sector collaboration. In recent years, she has helped implement a centralized Unit Dose system and supported national and academic research on drug shortages and inventory management. Her work aims to combine innovation with practical solutions for public hospital settings.',
+      img: hadas
     }
   ]
 ];

@@ -1,47 +1,152 @@
-
-
-.Prizes{
-    width: 32rem;
-    width: fit-content;
-    margin: 0 auto;
-    text-align: left;
-    margin-top: 1.7rem;
+.Prizes {
+  width: fit-content;
+  text-align: left;
+  margin-top: 1.7rem;
 }
-.PrizeHeading h1{
-    font-size: 5rem;
+.PrizeHeading h1 {
+  font-size: 5rem;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Prizes p {
+  color: rgb(145, 143, 143);
+}
+.Prizes .first {
+  color: #a239ea;
+}
+
+.Prizes .second {
+  color: #39a2db;
+}
+
+.Prizes .third {
+  color: #ff616d;
+}
+
+.Prizes .fourth {
+  color: #3c8dad;
+}
+
+.Prizes .fifth {
+  color: #bf1363;
+}
+
+.Prizes .sixth {
+  color: #ff96ad;
+}
+
+.Prizes .seventh {
+  color: #e4bad4;
+}
+
+.prize-row {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  align-items: flex-end;
+}
+
+.prize-responsive-col {
+  flex: 0 0 30%;
+  display: flex;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .prize-responsive-col {
+    flex: 0 0 100%; // 🔥 Stack full width on mobile
     margin-bottom: 2rem;
-    font-weight: 700;
-    font-family: 'Montserrat', sans-serif;
-
+  }
 }
 
-.Prizes p{
-    color: rgb(145, 143, 143);
-}
-.Prizes .first{
-    color:#A239EA;
-}
-
-.Prizes .second{
-    color:#39A2DB;
+.prize-col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 1rem;
 }
 
-.Prizes .third{
-    color:#FF616D;
+.PrizeCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.Prizes .fourth{
-    color:#3C8DAD;
+.prize-bottom-align {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  height: 100%;
 }
 
-.Prizes .fifth{
-    color:#BF1363;
+.prize-image {
+  max-width: 90%;
+  height: auto;
+  // border-radius: 2rem;
+  // box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.Prizes .sixth{
-    color:#FF96AD;
+.prize-title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  font-weight: bold;
+}
+.biztec-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+  text-align: left;
 }
 
-.Prizes .seventh{
-    color:#E4BAD4;
+.biztec-text {
+  max-width: 500px;
+}
+
+.biztec-logo {
+  height: 180px; // ⬆️ bigger image
+  width: auto;
+  flex-shrink: 0;
+}
+
+.biztec-title {
+  font-size: 2.8rem; // ⬆️ bigger headline
+  font-weight: 800;
+  margin-bottom: 1rem;
+  font-family: 'Montserrat', sans-serif;
+  // center
+  text-align: center;
+}
+
+.biztec-description {
+  font-size: 1.6rem; // ⬆️ larger paragraph
+  line-height: 1.8;
+  color: #222;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .biztec-wrapper {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .biztec-text {
+    text-align: center;
+  }
+
+  .biztec-title,
+  .biztec-description {
+    text-align: center;
+  }
+
+  .biztec-logo {
+    margin-bottom: 1rem;
+  }
 }

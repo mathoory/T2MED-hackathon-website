@@ -6,6 +6,8 @@ import facebook from './assets/facebook.png';
 import Insta from './assets/icons8-instagram.svg';
 import Linked from './assets/icons8-linkedin-2.svg';
 import Mail from './assets/icons8-mail.svg';
+import instruction from './assets/Hackathon_instructions.pdf';
+//     <Row key={index}';
 //------------------------------------------------------------------
 import './style.scss';
 
@@ -102,12 +104,12 @@ const Footer = () => {
           )}
           {FOOTER.Terms_of_use.required && (
             <a
-              href={'https://md.technion.ac.il/t2med/'}
+              href={instruction}
               download
               target="blank"
               className="privacy-policy"
             >
-              <p>Terms of Use</p>
+              <p>Hackathon Instructions</p>
             </a>
           )}
           <p>

@@ -18,6 +18,7 @@ import {
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
 import {JoinTeam, Member} from '../../components/Team';
+import biztec from '../../Module/Assets/biztec_1.png';
 import {
   FOOTER,
   frequentlyAskedQuestions,
@@ -45,11 +46,11 @@ const SponsorGroup = (props, index) => {
 // Prize group
 const PrizeGroup = (props, index) => {
   return (
-    <Row key={index}>
-      {props.map((s, i) => (
-        <Col key={i} className="" sm={12} lg={4} md={4}>
-          <FirstPrize icon={s.icon} type={s.type} content={s.content} />
-        </Col>
+    <Row className="prize-row">
+      {Prizeinfo[0].map((s, i) => (
+        <div className="prize-responsive-col" key={i}>
+          <FirstPrize image={s.image} title={s.title} />
+        </div>
       ))}
     </Row>
   );
@@ -125,7 +126,20 @@ export default function HomePage() {
         <Row className="prizesection" id="prizes">
           <PrizeHeading type="Prize section" />
           {Prizeinfo.map(PrizeGroup)}
+
+          <div className="biztec-wrapper">
+            <img src={biztec} alt="Biztec Logo" className="biztec-logo" />
+            <div className="biztec-text">
+              <h3 className="biztec-title">Biztec Partnership</h3>
+              <p className="biztec-description">
+                Honored to partner with BizTec again! As tradition holds, the
+                top three teams will earn direct entry to BizTec and financial
+                support to bring their projects to life.
+              </p>
+            </div>
+          </div>
         </Row>
+
         {/* ********Prizes ending here ***** */}
 
         {/* <Row className="prizesection non-coding">
@@ -150,7 +164,7 @@ export default function HomePage() {
 
         {/* ********Judges here **** */}
 
-        <h1 id="team">Our Judges</h1>
+        <h1 id="judges">Our Judges</h1>
         <p className="judges-info-text">
           <span className="highlight">Tap</span> or{' '}
           <span className="highlight">Hover</span> to learn more about the
@@ -159,7 +173,7 @@ export default function HomePage() {
 
         {JudgesInfo.map(TeamMembers)}
 
-        <h1 id="team">Our Mentors</h1>
+        <h1 id="mentors">Our Mentors</h1>
         {FOOTER.JOIN_TEAM.required && (
           <div className="mentor-section">
             <JoinTeam
