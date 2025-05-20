@@ -38,6 +38,8 @@ class Panel extends React.Component {
           className="panel__inner"
           style={innerStyle}
           aria-hidden={!isActive}
+          // eslint-disable-next-line jsx-a11y/role-supports-aria-props
+          aria-expanded={isActive}
         >
           <p className="panel__content">
             {content}

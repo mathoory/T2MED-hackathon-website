@@ -1,6 +1,5 @@
 import {UseMedia} from 'hooks/useMedia';
 import {useState} from 'react';
-import {SOCIALS} from '../../Module/General';
 
 import Col from 'react-bootstrap/Col';
 import Container from 'react-bootstrap/Container';
@@ -8,6 +7,7 @@ import Row from 'react-bootstrap/Row';
 import {Logo, LogoSectionAbout} from '../../components/About/index.jsx';
 import {Accordion} from '../../components/Accordian/index.jsx';
 import Birds from '../../components/Animation';
+import CongratsSection from '../../components/CongratsSection';
 import Footer from '../../components/Footer/index.jsx';
 import {Myinfo} from '../../components/Landing/index.jsx';
 import {FirstPrize, PrizeHeading} from '../../components/Prizes/index.jsx';
@@ -17,10 +17,9 @@ import {
   SponsorsHead,
   SponsorUS
 } from '../../components/Sponsors/sponsors.jsx';
-import {JoinTeam, Member} from '../../components/Team';
+import {Member} from '../../components/Team';
 import biztec from '../../Module/Assets/biztec_1.png';
 import {
-  FOOTER,
   frequentlyAskedQuestions,
   JudgesInfo,
   Prizeinfo,
@@ -107,6 +106,7 @@ export default function HomePage() {
       </div>
       <Container fluid>
         {/* Logo section  */}
+        <CongratsSection />
         <Row className=" logoSection">
           <Col className="info-div" sm={12} lg={8} md={8}>
             <LogoSectionAbout />
@@ -174,7 +174,7 @@ export default function HomePage() {
         {JudgesInfo.map(TeamMembers)}
 
         <h1 id="mentors">Our Mentors</h1>
-        {FOOTER.JOIN_TEAM.required && (
+        {/* {FOOTER.JOIN_TEAM.required && (
           <div className="mentor-section">
             <JoinTeam
               placeholder="Contact Us"
@@ -182,7 +182,7 @@ export default function HomePage() {
               content="Interested in being a mentor?"
             />
           </div>
-        )}
+        )} */}
 
         {/* ********Team here ***** */}
         {<br></br>}

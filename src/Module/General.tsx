@@ -50,16 +50,16 @@ import third from './Assets/prizesi/third.png';
 const TOP_SECTION = {
   TITLE: 'T2MED 2025',
   Typed_effect: [
-    '3 days of innovation',
-    'Medical challenges',
-    'Transform healthcare'
+    'Thank you for joining us!',
+    'Congratulations to all teams!',
+    'See you in 2026!'
   ],
   SHORT_DESCRIPTION:
-    'Join us on 14-16 May 2025 at the Technion Faculty of Medicine for an interdisciplinary hackathon focused on medical innovation and entrepreneurship.',
+    'T2MED 2025 has concluded! Thank you to all participants, mentors, and sponsors for making it an unforgettable event. Stay tuned for next year’s hackathon – see you in 2026!',
   IMG_SRC: boy,
   DISCORD_LINK: '',
   MENTORS_FORM_LINK: '',
-  HACKERS_REGISTRATION_FORM_LINK: 'https://forms.gle/iCerARQavxdMeMkp8'
+  HACKERS_REGISTRATION_FORM_LINK: '' // Hide registration
 };
 
 const SOCIALS = {

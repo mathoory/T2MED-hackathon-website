@@ -52,7 +52,9 @@ const Wrapper = styled.div`
 //   );
 // };
 
-const NAVBAR = ({}) => {
+const NAVBAR = props => {
+  // eslint-disable-next-line no-empty-pattern
+  const {} = props;
   const [toggle, setToggle] = useState(true);
   const [isOffset, setIsOffset] = useState(false);
 
@@ -134,6 +136,7 @@ const NAVBAR = ({}) => {
                 className="s-close"
                 onClick={() => setToggle(true)}
                 src={logoClose}
+                alt="Close menu"
               />
             </ul>
             <img
@@ -148,6 +151,7 @@ const NAVBAR = ({}) => {
           className="s-open"
           onClick={() => setToggle(false)}
           src={hamLogo}
+          alt="Open menu"
         />
       </nav>
 

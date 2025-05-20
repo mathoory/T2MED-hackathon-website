@@ -8,8 +8,10 @@ export const getDatesForMonth = (state: any) => {
     new Date(state.year, state.month - 1, 0)
   ];
 
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [
     firstDayOfTheMonth,
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     lastDayOfTheMonth,
     totalNumOfDays,
     totalNumOfDaysInPreviousMonths

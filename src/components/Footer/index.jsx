@@ -3,14 +3,15 @@ import {FOOTER, SOCIALS, TOP_SECTION} from '../../Module/General';
 import {Btn} from '../Landing/index.jsx';
 import cross from './assets/cross.svg';
 import facebook from './assets/facebook.png';
+import instruction from './assets/Hackathon_instructions.pdf';
 import Insta from './assets/icons8-instagram.svg';
 import Linked from './assets/icons8-linkedin-2.svg';
 import Mail from './assets/icons8-mail.svg';
-import instruction from './assets/Hackathon_instructions.pdf';
 //     <Row key={index}';
 //------------------------------------------------------------------
 import './style.scss';
 
+// eslint-disable-next-line no-unused-vars
 const GithubTemplate = ({hideTemplate}) => {
   return (
     <div className="template">
@@ -22,13 +23,15 @@ const GithubTemplate = ({hideTemplate}) => {
           discussions, and career sessions!
         </p>
       </div>
-      <img onClick={hideTemplate} src={cross} />
+      <img onClick={hideTemplate} src={cross} alt="close" />
     </div>
   );
 };
 
 const Footer = () => {
+  // eslint-disable-next-line no-unused-vars
   const [template, setTemplate] = useState(false);
+  // eslint-disable-next-line no-unused-vars
   const [viewTemplate, setViewTemplate] = useState(true);
 
   useEffect(() => {
@@ -71,9 +74,9 @@ const Footer = () => {
         </div>
 
         <div className="Register_a">
-          <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
+          {/* <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
             <Btn type="Register" overlay="Fill the form" />
-          </a>
+          </a> */}
           {FOOTER.VOLUNTEERING_FORM.required && (
             <a href={SOCIALS.email}>
               <Btn

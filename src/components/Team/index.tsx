@@ -20,10 +20,11 @@ const JoinTeam: React.FC<IJoinTeam> = ({placeholder, formLink, content}) => {
 };
 
 const Member = ({info}: {info: any}) => {
+  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const {github, role, name, img, linkedin, bio} = info;
   return (
     <div className="member">
-      <img src={img} alt={`${name}'s photo`} />
+      <img src={img} className="member-img" alt={name} />
       <h3>{name}</h3>
       <p className="role">{role}</p>
       {bio && (

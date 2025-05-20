@@ -1,0 +1,216 @@
+/* filepath: c:\Workspace\T2MED\src\components/CongratsSection/style.css */
+.congrats-section {
+  margin: 6vh auto 4vh auto;
+  padding: 4vh 2vw;
+  background: linear-gradient(100deg, #b1f2de 60%, #fbc7d4 100%);
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(87, 223, 183, 0.18);
+  text-align: center;
+  max-width: 900px;
+  position: relative;
+  transform: rotate(-2deg);
+}
+
+.congrats-title {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #39a2db;
+  margin-bottom: 2vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.congrats-photo-frame {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 2vh auto;
+  border: 8px solid #a239ea;
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(57, 162, 219, 0.18);
+  width: 80%;
+  max-width: 520px;
+  background: #fff;
+  transform: rotate(4deg);
+}
+
+.congrats-photo {
+  width: 100%;
+  border-radius: 12px;
+  display: block;
+}
+
+.congrats-message {
+  font-size: 2.1rem;
+  color: #333;
+  margin-top: 2vh;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+.congrats-section-winners {
+  margin: 6vh auto 4vh auto;
+  padding: 4vh 2vw;
+  background: #fff;
+  border-radius: 24px;
+  box-shadow: 0 8px 32px rgba(87, 223, 183, 0.18);
+  text-align: center;
+  max-width: 950px;
+  position: relative;
+  border: 4px solid #D59F0F; /* Technion gold */
+}
+
+.congrats-title-winners {
+  font-size: 3.5rem;
+  font-weight: 800;
+  color: #002147; /* Technion deep blue */
+  margin-bottom: 2vh;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.team-name {
+  color: #D59F0F; /* Technion gold */
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.congrats-photo-frame-winners {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 32px auto 32px auto;
+  border: 8px solid #002147; /* Technion deep blue */
+  border-radius: 18px;
+  box-shadow: 0 4px 24px rgba(0, 33, 71, 0.18);
+  width: 100%;
+  max-width: 700px; /* 1.4x 520px */
+  background: #fff;
+  /* Remove tilt */
+  overflow: hidden;
+  aspect-ratio: 4/3;
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+.congrats-photo-frame-winners:hover {
+  box-shadow: 0 8px 40px 0 rgba(87, 223, 183, 0.25), 0 1.5px 8px 0 #002147;
+  transform: translateY(-8px) scale(1.03);
+}
+
+.congrats-photo-winners {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 0;
+  margin: 0;
+  padding: 0;
+  box-shadow: none;
+  background: none;
+}
+
+.winner-details {
+  margin: 2vh auto 3vh auto;
+  background: #f6f8fa;
+  border-left: 8px solid #002147;
+  border-radius: 12px;
+  padding: 2vh 2vw;
+  max-width: 700px;
+  text-align: left;
+  box-shadow: 0 2px 12px rgba(0, 33, 71, 0.08);
+}
+
+.winner-details h2 {
+  color: #D59F0F; /* Technion gold */
+  font-size: 1.8rem;
+  margin-bottom: 0.5rem;
+}
+
+.winner-details p {
+  font-size: 1.32rem;
+  color: #222;
+  margin-bottom: 0.5rem;
+}
+
+.other-winners {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2vh auto 2vh auto;
+}
+
+.other-winner-block {
+  background: #f6f8fa;
+  border-left: 6px solid #002147; /* All side bars blue */
+  border-radius: 10px;
+  padding: 1.5vh 1.5vw;
+  min-width: 260px;
+  max-width: 340px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 33, 71, 0.08);
+}
+
+.other-winner-block h3 {
+  font-size: 1.8rem;
+}
+
+.other-winner-block p {
+  font-size: 1.32rem;
+}
+
+.second-place,
+.third-place,
+.audience-choice,
+.judges-mention {
+  color: #002147; /* All headings blue except 1st place */
+  font-weight: 700;
+  font-size: 1.8rem;
+}
+
+.congrats-message-winners {
+  font-size: 2.1rem;
+  color: #002147;
+  margin-top: 2vh;
+  font-weight: 500;
+  font-family: 'Poppins', sans-serif;
+}
+
+@media (max-width: 700px) {
+  .congrats-section {
+    padding: 2vh 1vw;
+  }
+  .congrats-title {
+    font-size: 2.2rem;
+  }
+  .congrats-photo-frame {
+    width: 98%;
+    border-width: 5px;
+  }
+  .congrats-message {
+    font-size: 1.3rem;
+  }
+}
+@media (max-width: 900px) {
+  .congrats-section-winners {
+    padding: 2vh 1vw;
+  }
+  .congrats-title-winners {
+    font-size: 2.2rem;
+  }
+  .congrats-photo-frame-winners {
+    width: 98%;
+    border-width: 5px;
+  }
+  .winner-details {
+    padding: 1vh 1vw;
+  }
+  .other-winners {
+    flex-direction: column;
+    gap: 1rem;
+  }
+  .other-winner-block {
+    min-width: 180px;
+    max-width: 100%;
+  }
+  .congrats-message-winners {
+    font-size: 1.3rem;
+  }
+}

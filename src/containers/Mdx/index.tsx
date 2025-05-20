@@ -7,7 +7,9 @@ import {Fragment} from 'react';
 // `@mdx-js/rollup`, and that it is configured with
 // `options.providerImportSource: '@mdx-js/react'`.
 
+// eslint-disable-next-line @typescript-eslint/no-unused-vars
 const components = {
+  // eslint-disable-next-line jsx-a11y/heading-has-content
   h1: (props: any) => <h1 {...props} />
 };
 

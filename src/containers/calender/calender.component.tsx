@@ -139,6 +139,7 @@ export const Calender = ({data}: any) => {
   const contextTesting = useContext(calenderContext);
   const {state, dispatch} = contextTesting;
 
+  // eslint-disable-next-line react-hooks/exhaustive-deps
   useEffect(() => {
     calenderMainLogic(state, dispatch, data);
   }, [state.month]);

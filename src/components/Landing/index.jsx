@@ -40,7 +40,7 @@ const Myinfo = () => {
           />
         </a>
       </div> */}
-      <div className="buttom-group">
+      {/* <div className="buttom-group">
         <a href={TOP_SECTION.HACKERS_REGISTRATION_FORM_LINK}>
           {' '}
           <Btn class="sponsor_btn" type="Register" overlay="Join T2MED 2025" />
@@ -54,7 +54,7 @@ const Myinfo = () => {
             overlay="Join T2MED 2025"
           />
         </a> */}
-      </div>
+      {/* </div> */}
     </div>
   );
 };
