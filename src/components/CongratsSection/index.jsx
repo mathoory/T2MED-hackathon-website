@@ -32,7 +32,7 @@ export default function CongratsSection() {
         <div className="other-winner-block">
           <h3 className="second-place">2nd Place – UviGyn</h3>
           <p>
-            <strong>Team Members:</strong> Lotem Bijaoui, Noa Levi, Idan Tzachy,
+            <strong>Team Members:</strong> Lotem Bijaoui, Noa Lavy, Idan Tzachy,
             Roi Wayner
           </p>
           <p>Early detection technology for gynecological health.</p>
