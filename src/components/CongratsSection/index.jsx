@@ -46,7 +46,22 @@ export default function CongratsSection() {
           <p>A digital tool to help prevent surgical equipment loss.</p>
         </div>
         <div className="other-winner-block">
-          <h3 className="audience-choice">Audience Favorite</h3>
+          <h3 className="audience-choice">
+            Audience Favorite Award In Memoery of{' '}
+            <a
+              href="https://remember.bio/he/remember_pages/%d7%a1%d7%a8%d7%9f-%d7%91%d7%9e%d7%99%d7%9c-%d7%90%d7%9c%d7%95%d7%9f-%d7%a1%d7%a4%d7%a8%d7%90%d7%99-%d7%96%d7%9c/"
+              target="_blank"
+              rel="noopener noreferrer"
+              style={{
+                color: '#1a0dab',
+                textDecoration: 'underline',
+                fontWeight: 'bold'
+              }}
+            >
+              Capt. Alon Safrai
+            </a>{' '}
+            – CervEase
+          </h3>
           <p>
             <strong>Team Members:</strong> Omri Leshem, Lior Ravia, Tal Angel,
             Nicole Abramenkov, Hadas Levi

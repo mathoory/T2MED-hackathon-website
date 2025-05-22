@@ -1,5 +1,4 @@
 import {TOP_SECTION} from '../../Module/General';
-import Countdown from '../Countdown/Countdown';
 import MytypedComponent from '../Typed/index.js';
 import './style.css';
 
@@ -20,7 +19,7 @@ const About = () => {
     <div className="AboutMe">
       <h2>{TOP_SECTION.TITLE}</h2>
       <MytypedComponent />
-      <Countdown targetDate="2025-05-14T00:00:00" /> {/* Add Countdown */}
+      {/* <Countdown targetDate="2025-05-14T00:00:00" /> */}
     </div>
   );
 };
